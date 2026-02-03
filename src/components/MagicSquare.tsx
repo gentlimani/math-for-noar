@@ -73,7 +73,7 @@ export default function MagicSquare({
       const rowCells = cellStates.slice(row * grid_size, (row + 1) * grid_size)
       const values = rowCells.map(c => c.value)
       const isComplete = values.every(v => v !== null)
-      const sum = values.reduce((acc, v) => acc + (v || 0), 0)
+      const sum = values.reduce((acc: number, v) => acc + (v || 0), 0)
       
       newRowValidations.push({
         isComplete,
@@ -90,7 +90,7 @@ export default function MagicSquare({
       }
       const values = colCells.map(c => c.value)
       const isComplete = values.every(v => v !== null)
-      const sum = values.reduce((acc, v) => acc + (v || 0), 0)
+      const sum = values.reduce((acc: number, v) => acc + (v || 0), 0)
       
       newColValidations.push({
         isComplete,
