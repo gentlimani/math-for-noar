@@ -1,0 +1,1662 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 30, 41, 59;
+  --bg-gradient-start: 254, 243, 199;
+  --bg-gradient-end: 254, 215, 170;
+  --primary: #6366f1;
+  --primary-light: #818cf8;
+  --secondary: #f472b6;
+  --accent: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    135deg,
+    rgb(var(--bg-gradient-start)),
+    rgb(var(--bg-gradient-end))
+  );
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Prevent pull-to-refresh on iOS */
+html {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+/* Touch optimization */
+* {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Fun kid-friendly scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f472b6, #818cf8);
+  border-radius: 10px;
+}
+
+/* ================================
+   KID-FRIENDLY THEME STYLES
+   ================================ */
+
+/* Gradient backgrounds */
+.bg-fun-gradient {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fed7aa 100%);
+}
+
+.bg-card-gradient {
+  background: linear-gradient(145deg, #ffffff 0%, #fefce8 100%);
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.bg-success-gradient {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+}
+
+.bg-pink-gradient {
+  background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+}
+
+/* Fun card styles */
+.card-fun {
+  @apply bg-white rounded-3xl shadow-xl p-6 border-4 border-white;
+  background: linear-gradient(145deg, #ffffff 0%, #fefce8 100%);
+  box-shadow: 
+    0 10px 40px rgba(99, 102, 241, 0.15),
+    0 0 0 4px rgba(251, 191, 36, 0.3);
+}
+
+.card-fun:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 
+    0 20px 50px rgba(99, 102, 241, 0.2),
+    0 0 0 4px rgba(251, 191, 36, 0.5);
+}
+
+.card-topic {
+  @apply relative overflow-hidden rounded-3xl p-6 cursor-pointer;
+  background: linear-gradient(145deg, #ffffff 0%, #fefce8 100%);
+  border: 4px solid transparent;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.card-topic:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: #fbbf24;
+  box-shadow: 0 20px 40px rgba(251, 191, 36, 0.3);
+}
+
+.card-topic.locked {
+  @apply opacity-60 grayscale cursor-not-allowed;
+}
+
+.card-topic.locked:hover {
+  transform: none;
+  border-color: transparent;
+}
+
+/* Fun buttons */
+.btn-fun {
+  @apply font-bold py-4 px-8 rounded-2xl text-white text-lg;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4), 0 4px 0 #4f46e5;
+  transition: all 0.2s ease;
+}
+
+.btn-fun:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5), 0 6px 0 #4f46e5;
+}
+
+.btn-fun:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4), 0 2px 0 #4f46e5;
+}
+
+.btn-fun:disabled {
+  @apply opacity-50 cursor-not-allowed;
+  transform: none;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 6px 20px rgba(52, 211, 153, 0.4), 0 4px 0 #059669;
+}
+
+.btn-success:hover {
+  box-shadow: 0 8px 25px rgba(52, 211, 153, 0.5), 0 6px 0 #059669;
+}
+
+.btn-pink {
+  background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+  box-shadow: 0 6px 20px rgba(244, 114, 182, 0.4), 0 4px 0 #db2777;
+}
+
+.btn-secondary-fun {
+  @apply font-bold py-4 px-8 rounded-2xl text-slate-700 text-lg bg-white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1), 0 4px 0 #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary-fun:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 6px 0 #e2e8f0;
+}
+
+/* Option buttons for quiz */
+.option-btn-fun {
+  @apply w-full p-5 text-xl font-bold rounded-2xl border-4 bg-white;
+  border-color: #e2e8f0;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.option-btn-fun:hover:not(:disabled) {
+  border-color: #818cf8;
+  background: linear-gradient(145deg, #eef2ff 0%, #e0e7ff 100%);
+  transform: scale(1.03);
+}
+
+.option-btn-fun.selected {
+  border-color: #6366f1;
+  background: linear-gradient(145deg, #e0e7ff 0%, #c7d2fe 100%);
+  transform: scale(1.02);
+}
+
+.option-btn-fun.correct {
+  border-color: #34d399;
+  background: linear-gradient(145deg, #d1fae5 0%, #a7f3d0 100%);
+  color: #065f46;
+}
+
+.option-btn-fun.incorrect {
+  border-color: #f87171;
+  background: linear-gradient(145deg, #fee2e2 0%, #fecaca 100%);
+  color: #991b1b;
+}
+
+/* ================================
+   ANIMATIONS
+   ================================ */
+
+/* Bounce animation */
+@keyframes bounce-fun {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-bounce-fun {
+  animation: bounce-fun 0.6s ease-in-out;
+}
+
+/* Wiggle animation */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+/* Pop animation */
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.animate-pop {
+  animation: pop 0.3s ease-in-out;
+}
+
+/* Correct answer celebration */
+@keyframes celebrate {
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.1) rotate(-5deg); }
+  50% { transform: scale(1.2) rotate(5deg); }
+  75% { transform: scale(1.1) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.animate-celebrate {
+  animation: celebrate 0.6s ease-in-out;
+}
+
+/* Shake for wrong answer */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Float animation for mascot */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse glow */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(251, 191, 36, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(251, 191, 36, 0.6); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Star spin */
+@keyframes star-spin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.animate-star-spin {
+  animation: star-spin 1s ease-in-out;
+}
+
+/* Confetti */
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  animation: confetti-fall 3s linear forwards;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Hint reveal */
+@keyframes hint-reveal {
+  0% { opacity: 0; transform: translateY(-20px) scale(0.9); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-hint-reveal {
+  animation: hint-reveal 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Progress bar fill */
+.progress-fill {
+  transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ================================
+   SCRATCH PAD STYLES
+   ================================ */
+
+.scratch-canvas {
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.scratch-container {
+  @apply bg-white rounded-2xl shadow-lg overflow-hidden;
+  border: 3px solid #e2e8f0;
+}
+
+/* ================================
+   DRAG & DROP STYLES
+   ================================ */
+
+.draggable {
+  @apply cursor-grab select-none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.draggable:active {
+  @apply cursor-grabbing;
+}
+
+.draggable.dragging {
+  @apply opacity-80 scale-110 z-50;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.drop-zone {
+  @apply border-4 border-dashed border-slate-300 rounded-2xl;
+  transition: all 0.2s ease;
+  min-height: 60px;
+  min-width: 80px;
+}
+
+.drop-zone.drag-over {
+  @apply border-indigo-400 bg-indigo-50;
+  transform: scale(1.05);
+}
+
+.drop-zone.filled {
+  @apply border-solid border-indigo-500 bg-indigo-100;
+}
+
+.drag-item {
+  @apply inline-flex items-center justify-center px-4 py-3 rounded-xl font-bold text-lg;
+  background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);
+  border: 3px solid #cbd5e1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.drag-item:hover {
+  border-color: #818cf8;
+  transform: translateY(-2px);
+}
+
+.drag-item.placed {
+  @apply opacity-50;
+}
+
+/* ================================
+   LEARN MODE STYLES
+   ================================ */
+
+.learn-step {
+  @apply bg-white rounded-3xl p-8 shadow-xl;
+  border: 4px solid #fbbf24;
+}
+
+.animation-container {
+  @apply relative bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl;
+  min-height: 300px;
+}
+
+/* Mascot speech bubble */
+.speech-bubble {
+  @apply relative bg-white rounded-2xl p-4 shadow-lg;
+  border: 3px solid #fbbf24;
+}
+
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #fbbf24 transparent transparent transparent;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 33px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+/* ================================
+   RESPONSIVE LAYOUTS
+   ================================ */
+
+/* Quiz layout with side scratch pad */
+.quiz-layout {
+  @apply flex flex-col lg:flex-row gap-4 min-h-[calc(100vh-200px)];
+}
+
+.quiz-content {
+  @apply flex-1 flex flex-col;
+}
+
+.scratch-panel {
+  @apply w-full lg:w-[45%] xl:w-[50%];
+}
+
+/* Mobile: scratch pad at bottom */
+@media (max-width: 1023px) {
+  .scratch-panel {
+    @apply h-[40vh] sticky bottom-0;
+  }
+}
+
+/* ================================
+   BADGES & REWARDS
+   ================================ */
+
+.badge-fun {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-full font-bold text-sm;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #78350f;
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
+}
+
+.star-counter {
+  @apply inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #92400e;
+}
+
+.streak-fire {
+  animation: float 1s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.6));
+}
+
+/* ================================
+   TOPIC ICONS
+   ================================ */
+
+.topic-icon {
+  @apply text-5xl;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Topic-specific colors */
+.topic-addition { --topic-color: #34d399; }
+.topic-subtraction { --topic-color: #f472b6; }
+.topic-multiplication { --topic-color: #60a5fa; }
+.topic-division { --topic-color: #a78bfa; }
+
+/* ================================
+   BLACKBOARD / NOTEBOOK PAPER STYLES
+   ================================ */
+
+/* Import handwriting font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+.font-handwriting {
+  font-family: 'Comic Neue', cursive, system-ui;
+}
+
+.blackboard-container {
+  @apply relative;
+}
+
+.notebook-paper {
+  @apply relative bg-white rounded-2xl overflow-hidden;
+  background-image: 
+    repeating-linear-gradient(
+      transparent,
+      transparent 31px,
+      #a8d4ff 31px,
+      #a8d4ff 32px
+    );
+  background-color: #fffef5;
+  border: 4px solid #d4a574;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.1),
+    inset 0 0 20px rgba(212, 165, 116, 0.1);
+  padding: 20px 20px 20px 80px;
+  min-height: 400px;
+  font-family: 'Comic Neue', cursive;
+}
+
+.margin-line {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ff9999;
+}
+
+.notebook-content {
+  @apply relative z-10;
+}
+
+/* Vertical math problem display */
+.math-problem-display {
+  @apply relative flex justify-center py-8;
+}
+
+.vertical-problem {
+  @apply text-right;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  font-family: 'Comic Neue', cursive;
+}
+
+.problem-row {
+  @apply relative;
+  min-height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.problem-row .operator {
+  @apply mr-4 text-indigo-600;
+}
+
+.problem-row .number {
+  @apply inline-block min-w-[40px] text-center;
+}
+
+.problem-line {
+  @apply border-b-4 border-slate-700 my-2;
+  width: 120px;
+  margin-left: auto;
+}
+
+.result-row {
+  @apply opacity-0 transform translate-y-4;
+  transition: all 0.5s ease;
+}
+
+.result-row.show {
+  @apply opacity-100 translate-y-0;
+}
+
+.result-number {
+  @apply text-green-600;
+}
+
+/* Carry bubble */
+.carry-bubble {
+  @apply absolute -top-6 opacity-0 transform scale-0;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.carry-bubble.show {
+  @apply opacity-100 scale-100;
+}
+
+.carry-bubble::before {
+  content: '';
+  @apply absolute w-8 h-8 rounded-full bg-orange-400 flex items-center justify-center;
+  font-size: 0.875rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* Borrow indicator */
+.borrow-indicator {
+  @apply absolute opacity-0 transform scale-0;
+  transition: all 0.5s ease;
+}
+
+.borrow-indicator.show {
+  @apply opacity-100 scale-100;
+}
+
+.borrow-indicator .crossed {
+  @apply text-red-500 line-through text-sm;
+}
+
+.borrow-indicator .added {
+  @apply text-green-500 text-sm ml-1;
+}
+
+/* Step text */
+.steps-container {
+  @apply space-y-3 mt-8;
+}
+
+.step-text {
+  @apply p-3 rounded-xl text-lg text-slate-700;
+  font-family: 'Comic Neue', cursive;
+  transition: all 0.3s ease;
+}
+
+.step-text.current {
+  @apply bg-yellow-100 border-l-4 border-yellow-400;
+}
+
+.step-text.result-step {
+  @apply bg-green-100 text-green-800 font-bold text-center text-xl;
+}
+
+/* Typing cursor effect */
+.typing-cursor::after {
+  content: '|';
+  @apply animate-pulse text-indigo-500;
+}
+
+/* Blackboard controls */
+.blackboard-controls {
+  @apply flex justify-center gap-4 mt-6 pt-4 border-t border-slate-200;
+}
+
+.control-btn {
+  @apply flex items-center gap-2 px-4 py-2 rounded-xl font-medium transition-all;
+}
+
+.control-btn.play-btn {
+  @apply bg-indigo-500 text-white hover:bg-indigo-600;
+}
+
+.control-btn.reset-btn {
+  @apply bg-slate-100 text-slate-700 hover:bg-slate-200;
+}
+
+.control-btn.audio-btn {
+  @apply bg-slate-100 text-slate-500 hover:bg-slate-200;
+}
+
+.control-btn.audio-btn.active {
+  @apply bg-green-100 text-green-600;
+}
+
+/* Visual groups for multiplication */
+.visual-groups {
+  @apply flex flex-wrap justify-center gap-4 mt-6;
+}
+
+.group-box {
+  @apply p-3 bg-yellow-50 border-2 border-yellow-300 rounded-xl;
+}
+
+/* Division visual */
+.division-visual {
+  @apply mt-6;
+}
+
+.items-to-divide {
+  @apply flex flex-wrap gap-1 justify-center p-3 bg-pink-50 rounded-xl mb-4;
+}
+
+.divide-item {
+  @apply text-xl transition-all duration-300;
+}
+
+.divide-item.distributed {
+  @apply opacity-30;
+}
+
+.divide-item.remainder {
+  @apply opacity-100;
+}
+
+.division-groups {
+  @apply flex gap-4 justify-center flex-wrap;
+}
+
+.division-group {
+  @apply p-3 bg-blue-50 border-2 border-blue-300 rounded-xl text-center;
+}
+
+.group-label {
+  @apply text-xs font-bold text-blue-600 mb-2 block;
+}
+
+/* Celebration overlay */
+.celebration-overlay {
+  @apply absolute inset-0 flex items-center justify-center;
+  background: rgba(255, 255, 255, 0.9);
+  animation: fade-in 0.5s ease;
+}
+
+.celebration-content {
+  @apply text-center;
+}
+
+.celebration-emoji {
+  @apply text-6xl animate-bounce-fun;
+}
+
+.celebration-text {
+  @apply text-2xl font-bold text-green-600 mt-2;
+  font-family: 'Comic Neue', cursive;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ================================
+   TRIANGLE PROBLEM STYLES
+   ================================ */
+
+.triangle-problem-container {
+  @apply p-6;
+}
+
+/* SVG animation for triangle dashes */
+@keyframes dash-flow {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 24; }
+}
+
+.animate-dash {
+  animation: dash-flow 2s linear infinite;
+}
+
+/* ================================
+   SOROBAN (ABACUS) STYLES
+   ================================ */
+
+.soroban-container {
+  @apply bg-white rounded-2xl p-6 shadow-lg;
+}
+
+.soroban-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.soroban-title {
+  @apply text-xl font-bold text-slate-800 flex items-center gap-2;
+}
+
+.target-display {
+  @apply flex items-center gap-2 px-4 py-2 bg-indigo-100 rounded-xl;
+}
+
+.target-display.correct {
+  @apply bg-green-100;
+}
+
+.target-label {
+  @apply text-sm text-slate-600;
+}
+
+.target-number {
+  @apply text-xl font-bold text-indigo-600;
+}
+
+.soroban-frame {
+  @apply relative bg-amber-100 rounded-xl p-4 border-4 border-amber-800;
+  background: linear-gradient(145deg, #d4a574 0%, #c4956a 100%);
+}
+
+.soroban-bar {
+  @apply h-3 bg-amber-900 rounded-full relative;
+}
+
+.top-bar, .bottom-bar {
+  @apply my-2;
+}
+
+.divider-bar {
+  @apply my-4 flex items-center justify-around;
+}
+
+.column-value {
+  @apply text-xs font-bold text-white bg-amber-800 px-2 py-0.5 rounded;
+}
+
+.soroban-columns {
+  @apply flex justify-around gap-2 py-4 relative z-10;
+}
+
+.soroban-column {
+  @apply flex flex-col items-center;
+}
+
+.heaven-section {
+  @apply flex flex-col items-center h-16 justify-end;
+}
+
+.earth-section {
+  @apply flex flex-col items-center h-24 justify-start;
+}
+
+.bead {
+  @apply w-10 h-6 rounded-full cursor-pointer transition-all duration-200;
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.4),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bead:hover {
+  transform: scale(1.1);
+}
+
+.bead.heaven-bead {
+  @apply bg-gradient-to-b from-red-400 to-red-600;
+}
+
+.bead.heaven-bead.active {
+  transform: translateY(20px);
+}
+
+.bead.earth-bead {
+  @apply bg-gradient-to-b from-amber-300 to-amber-500 mb-1;
+}
+
+.bead.earth-bead.active {
+  transform: translateY(-10px);
+}
+
+.bead-inner {
+  @apply w-full h-full rounded-full;
+  background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, transparent 50%);
+}
+
+.bead-space {
+  @apply h-4;
+}
+
+.column-label {
+  @apply text-xs font-medium text-amber-900 mt-2 text-center;
+  max-width: 60px;
+}
+
+.soroban-rods {
+  @apply absolute inset-0 flex justify-around px-4 py-8 pointer-events-none;
+}
+
+.rod {
+  @apply w-1 bg-amber-700 rounded-full;
+}
+
+.value-display {
+  @apply text-center mt-6 p-4 bg-slate-100 rounded-xl;
+}
+
+.value-label {
+  @apply text-sm text-slate-600;
+}
+
+.value-number {
+  @apply text-3xl font-bold text-slate-800 ml-2;
+}
+
+.value-number.correct {
+  @apply text-green-600;
+}
+
+.soroban-controls {
+  @apply flex justify-center gap-4 mt-6;
+}
+
+.quick-numbers {
+  @apply mt-6 text-center;
+}
+
+.quick-label {
+  @apply text-sm text-slate-600 mb-2;
+}
+
+.quick-buttons {
+  @apply flex flex-wrap justify-center gap-2;
+}
+
+.quick-btn {
+  @apply px-4 py-2 bg-slate-100 rounded-lg font-mono font-bold hover:bg-slate-200 transition-colors;
+}
+
+.success-message {
+  @apply mt-6 p-4 bg-green-100 rounded-xl text-center text-green-800 font-bold flex items-center justify-center gap-2;
+}
+
+.success-emoji {
+  @apply text-2xl;
+}
+
+/* Tutorial overlay */
+.tutorial-overlay {
+  @apply fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4;
+}
+
+.tutorial-card {
+  @apply bg-white rounded-2xl p-8 max-w-md w-full text-center;
+}
+
+.tutorial-text {
+  @apply text-lg text-slate-700 mb-6;
+}
+
+.tutorial-actions {
+  @apply flex justify-center;
+}
+
+.tutorial-btn {
+  @apply px-6 py-3 bg-indigo-500 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors;
+}
+
+.tutorial-progress {
+  @apply flex justify-center gap-2 mt-4;
+}
+
+.progress-dot {
+  @apply w-3 h-3 rounded-full bg-slate-300 transition-all;
+}
+
+.progress-dot.current {
+  @apply bg-indigo-500 scale-125;
+}
+
+.progress-dot.completed {
+  @apply bg-green-500;
+}
+
+/* ================================
+   STICK MULTIPLICATION STYLES
+   ================================ */
+
+.stick-multiplication-container {
+  @apply bg-white rounded-2xl p-6 shadow-lg;
+}
+
+.stick-header {
+  @apply flex flex-col sm:flex-row items-center justify-between mb-6 gap-4;
+}
+
+.stick-title {
+  @apply text-xl font-bold text-slate-800 flex items-center gap-2;
+}
+
+.problem-display {
+  @apply flex items-center gap-3 text-2xl font-bold;
+}
+
+.problem-display .num1 { @apply text-red-500; }
+.problem-display .num2 { @apply text-blue-500; }
+.problem-display .operator { @apply text-slate-400; }
+.problem-display .equals { @apply text-slate-400; }
+.problem-display .result-value { @apply text-green-600; }
+
+.stick-canvas-container {
+  @apply relative;
+}
+
+.stick-canvas {
+  @apply w-full rounded-xl border-4 border-slate-200;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.stick-legend {
+  @apply flex justify-center gap-6 mt-4;
+}
+
+.legend-item {
+  @apply flex items-center gap-2 text-sm;
+}
+
+.legend-line {
+  @apply w-6 h-1 rounded;
+}
+
+.legend-line.horizontal { @apply bg-red-500; }
+.legend-line.vertical { @apply bg-blue-500; }
+
+.legend-dot {
+  @apply w-3 h-3 rounded-full bg-green-500;
+}
+
+.step-display {
+  @apply mt-6 p-4 bg-slate-100 rounded-xl text-center;
+}
+
+.step-text {
+  @apply text-lg text-slate-700;
+  font-family: 'Comic Neue', cursive;
+}
+
+.stick-controls {
+  @apply flex flex-wrap justify-center gap-4 mt-6;
+}
+
+.stick-controls .control-btn.primary {
+  @apply bg-indigo-500 text-white;
+}
+
+.stick-explanation {
+  @apply mt-6 p-4 bg-yellow-50 rounded-xl border-2 border-yellow-200;
+}
+
+.stick-explanation h4 {
+  @apply font-bold text-yellow-800 mb-3;
+}
+
+.stick-explanation ol {
+  @apply space-y-2 text-sm text-yellow-700;
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+/* ================================
+   SPEED MATH GAME STYLES
+   ================================ */
+
+.speed-math-container {
+  @apply bg-white rounded-2xl p-6 shadow-lg;
+}
+
+.speed-math-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.speed-math-title {
+  @apply text-xl font-bold text-slate-800 flex items-center gap-2;
+}
+
+.audio-toggle {
+  @apply p-2 rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors;
+}
+
+.speed-math-ready {
+  @apply space-y-6;
+}
+
+.ready-content {
+  @apply text-center py-8;
+}
+
+.difficulty-badges {
+  @apply flex flex-wrap items-center justify-center gap-4;
+}
+
+.difficulty-badge {
+  @apply px-4 py-2 rounded-full font-bold;
+}
+
+.difficulty-badge.easy { @apply bg-green-100 text-green-700; }
+.difficulty-badge.medium { @apply bg-yellow-100 text-yellow-700; }
+.difficulty-badge.hard { @apply bg-red-100 text-red-700; }
+
+.operation-badges {
+  @apply flex gap-2;
+}
+
+.operation-badge {
+  @apply w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center font-mono text-lg;
+}
+
+.start-btn {
+  @apply flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 
+         text-white font-bold text-xl rounded-2xl shadow-lg hover:shadow-xl transition-all;
+}
+
+.leaderboard-preview {
+  @apply bg-slate-50 rounded-2xl p-6;
+}
+
+.leaderboard-title {
+  @apply flex items-center gap-2 font-bold text-slate-800 mb-4;
+}
+
+.leaderboard-list {
+  @apply space-y-2;
+}
+
+.leaderboard-entry {
+  @apply flex items-center justify-between p-3 bg-white rounded-xl;
+}
+
+.leaderboard-entry .rank {
+  @apply font-bold text-slate-500;
+}
+
+.leaderboard-entry .score {
+  @apply font-bold text-indigo-600;
+}
+
+.leaderboard-entry .correct {
+  @apply text-green-600;
+}
+
+/* Speed math playing state */
+.speed-math-playing {
+  @apply space-y-6;
+}
+
+.stats-bar {
+  @apply flex items-center justify-between bg-slate-100 rounded-xl p-4;
+}
+
+.timer {
+  @apply flex items-center gap-2 text-xl font-bold;
+}
+
+.timer-value {
+  font-family: 'Comic Neue', monospace;
+}
+
+.score-display {
+  @apply flex items-center gap-1 text-xl font-bold text-slate-800;
+}
+
+.streak-display {
+  @apply flex items-center gap-1 text-lg font-bold text-orange-500;
+}
+
+.problem-card {
+  @apply bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 text-center 
+         border-4 border-transparent transition-all duration-300;
+}
+
+.problem-card.correct {
+  @apply border-green-400 bg-green-50;
+}
+
+.problem-card.incorrect {
+  @apply border-red-400 bg-red-50;
+}
+
+.problem-equation {
+  @apply flex items-center justify-center gap-4 text-4xl font-bold;
+}
+
+.problem-equation .num { @apply text-slate-800; }
+.problem-equation .op { @apply text-indigo-500; }
+.problem-equation .equals { @apply text-slate-400; }
+.problem-equation .answer-box {
+  @apply w-20 h-16 border-4 border-dashed border-slate-300 rounded-xl 
+         flex items-center justify-center text-slate-400;
+}
+
+.problem-equation .correct-answer {
+  @apply text-green-600;
+}
+
+.feedback-icon {
+  @apply absolute top-4 right-4 text-4xl;
+}
+
+.feedback-icon.correct { @apply text-green-500; }
+.feedback-icon.incorrect { @apply text-red-500; }
+
+.answer-input-container {
+  @apply flex gap-4 justify-center;
+}
+
+.answer-input {
+  @apply w-40 px-6 py-4 text-2xl text-center font-bold border-4 border-slate-200 
+         rounded-xl focus:border-indigo-400 focus:outline-none transition-colors;
+}
+
+.submit-btn {
+  @apply px-8 py-4 bg-indigo-500 text-white font-bold text-xl rounded-xl 
+         hover:bg-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+.progress-bar {
+  @apply h-2 bg-slate-200 rounded-full overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full bg-gradient-to-r from-green-400 to-green-500 transition-all duration-1000;
+}
+
+/* Speed math finished state */
+.speed-math-finished {
+  @apply flex items-center justify-center py-8;
+}
+
+.result-card {
+  @apply bg-white rounded-2xl p-8 text-center shadow-xl max-w-md w-full;
+}
+
+.result-card.high-score {
+  @apply border-4 border-yellow-400;
+  background: linear-gradient(145deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.high-score-banner {
+  @apply flex items-center justify-center gap-2 text-yellow-800 font-bold text-xl mb-4;
+}
+
+.result-title {
+  @apply text-2xl font-bold text-slate-800 mb-6;
+}
+
+.result-stats {
+  @apply flex justify-around mb-8;
+}
+
+.stat {
+  @apply flex flex-col items-center;
+}
+
+.stat-value {
+  @apply text-3xl font-bold text-slate-800;
+}
+
+.stat-label {
+  @apply text-sm text-slate-600;
+}
+
+.stat-icon {
+  @apply text-3xl;
+}
+
+.play-again-btn {
+  @apply flex items-center justify-center gap-2 px-8 py-4 bg-indigo-500 text-white 
+         font-bold text-lg rounded-xl hover:bg-indigo-600 transition-colors;
+}
+
+/* ================================
+   LEVEL & XP PROGRESS
+   ================================ */
+
+.level-badge {
+  @apply inline-flex items-center gap-2 px-3 py-1 rounded-full font-bold text-sm;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+}
+
+.xp-bar {
+  @apply h-3 bg-slate-200 rounded-full overflow-hidden;
+}
+
+.xp-fill {
+  @apply h-full bg-gradient-to-r from-indigo-400 to-purple-500 transition-all duration-500;
+}
+
+.daily-streak-calendar {
+  @apply flex gap-2;
+}
+
+.day-cell {
+  @apply w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold;
+}
+
+.day-cell.active {
+  @apply bg-green-500 text-white;
+}
+
+.day-cell.inactive {
+  @apply bg-slate-200 text-slate-400;
+}
+
+.day-cell.today {
+  @apply ring-2 ring-indigo-500;
+}
+
+/* ================================
+   SPEECH BUBBLE STYLES
+   ================================ */
+
+.speech-bubble-mini {
+  position: relative;
+}
+
+.speech-bubble-mini::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: inherit;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/* ================================
+   NEW SOROBAN BEAD STYLES
+   ================================ */
+
+.soroban-bead {
+  @apply w-12 h-7 rounded-full cursor-pointer relative;
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.4),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.2),
+    0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.soroban-bead:hover {
+  transform: scale(1.1) !important;
+}
+
+.soroban-bead:active {
+  transform: scale(0.95) !important;
+}
+
+.heaven-bead {
+  @apply bg-gradient-to-b from-red-400 to-red-600;
+}
+
+.earth-bead {
+  @apply bg-gradient-to-b from-amber-300 to-amber-500;
+}
+
+.bead-body {
+  @apply w-full h-full rounded-full overflow-hidden;
+}
+
+.bead-shine {
+  @apply w-full h-1/2;
+  background: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, transparent 100%);
+}
+
+/* ================================
+   VISUAL MULTIPLICATION DRAG & DROP
+   ================================ */
+
+.visual-mult-game {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Stick in toolbox styling */
+.stick-in-toolbox {
+  transition: all 0.2s ease;
+}
+
+.stick-in-toolbox:not(.used):hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+
+.stick-in-toolbox:not(.used):active {
+  transform: scale(0.95);
+  cursor: grabbing !important;
+}
+
+/* Placed stick animation */
+.stick-placed {
+  animation: stick-appear 0.3s ease-out;
+}
+
+@keyframes stick-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Bouncing arrow animation */
+@keyframes bounce-x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.animate-bounce-x {
+  animation: bounce-x 1s ease-in-out infinite;
+}
+
+/* Intersection dot animations */
+.intersection-dot {
+  transition: all 0.2s ease;
+}
+
+.intersection-dot:hover:not(:disabled) {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.intersection-dot.clicked {
+  animation: dot-pop 0.3s ease-out;
+}
+
+@keyframes dot-pop {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+
+/* Drop zone highlight */
+.drop-zone-highlight {
+  @apply border-4 border-dashed border-indigo-400 bg-indigo-50;
+}
+
+/* Drag feedback */
+[draggable="true"] {
+  touch-action: none;
+}
+
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+  .stick-in-toolbox {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .stick-in-toolbox.horizontal {
+    width: 70px !important;
+    height: 16px !important;
+    min-height: 16px;
+  }
+  
+  .stick-in-toolbox.vertical {
+    width: 16px !important;
+    height: 70px !important;
+    min-width: 16px;
+  }
+}
+
+/* Small screens - make sticks even smaller */
+@media (max-width: 480px) {
+  .stick-in-toolbox.horizontal {
+    width: 50px !important;
+    height: 12px !important;
+  }
+  
+  .stick-in-toolbox.vertical {
+    width: 12px !important;
+    height: 50px !important;
+  }
+  
+  /* Smaller grid for visual multiplication on mobile */
+  .visual-mult-game .stick-canvas-container {
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+}
+
+/* Touch drag visual feedback */
+.stick-in-toolbox.dragging,
+.stick-in-toolbox:active {
+  opacity: 0.7;
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ================================
+   NEW SOROBAN BEAD STYLES (SMOOTH)
+   ================================ */
+
+.soroban-bead-new {
+  @apply w-12 h-6 rounded-full cursor-pointer relative;
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.5),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.2),
+    0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.soroban-bead-new.heaven {
+  @apply bg-gradient-to-b from-red-400 to-red-600;
+}
+
+.soroban-bead-new.earth {
+  @apply bg-gradient-to-b from-amber-300 to-amber-500;
+}
+
+.soroban-bead-new:hover {
+  filter: brightness(1.1);
+}
+
+.soroban-bead-new:active {
+  transform: scale(0.95) !important;
+}
+
+/* ================================
+   VISUAL QUESTION EMOJI STYLES
+   ================================ */
+
+/* Ensure emoji shapes render properly */
+.visual-question {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Android Emoji', sans-serif;
+}
+
+/* Emoji shapes - ensure visibility */
+.emoji-shape {
+  display: inline-block;
+  font-size: 1.25em;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* Fallback SVG shapes for when emojis don't render */
+.shape-triangle {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: #f472b6;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.shape-square {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  background: #fb923c;
+  border-radius: 2px;
+}
+
+.shape-circle {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  background: #60a5fa;
+  border-radius: 50%;
+}
+
+.shape-diamond {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  background: #a78bfa;
+  transform: rotate(45deg);
+}
+
+/* Visual question text with proper emoji rendering */
+.question-visual-text {
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+
+/* Make emoji shapes larger and more visible in questions */
+.question-visual-text span.emoji,
+.question-visual-text .emoji-group {
+  display: inline-flex;
+  gap: 0.1em;
+  font-size: 1.3em;
+  padding: 0.1em;
+}
+
+/* ================================
+   XP TOAST ANIMATIONS
+   ================================ */
+
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.animate-confetti {
+  animation: confetti 1s ease-out forwards;
+}
+
+/* Radial gradient background */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* ================================
+   WELCOME PAGE ANIMATIONS
+   ================================ */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ================================
+   ADDITIONAL ANIMATIONS
+   ================================ */
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-8px); }
+  80% { transform: translateX(8px); }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Pop animation for clicks */
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.animate-pop {
+  animation: pop 0.2s ease-out;
+}
+
+/* Larger touch targets for iPad */
+@media (hover: none) and (pointer: coarse) {
+  .soroban-bead {
+    @apply w-14 h-9;
+  }
+  
+  .option-btn-fun {
+    @apply min-h-[70px];
+  }
+  
+  .control-btn {
+    @apply min-h-[56px] min-w-[120px];
+  }
+}

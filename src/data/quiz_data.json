@@ -1,0 +1,2132 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-01-29",
+  "subjects": {
+    "mbledhja": {
+      "titleAl": "Mbledhja",
+      "icon": "➕",
+      "questions": [
+        {
+          "id": "add_std_001",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 23 + 15?",
+          "options": [38, 35, 48, 28],
+          "correctAnswer": 38,
+          "hints": ["Fillo me njëshat: 3 + 5 = 8", "Pastaj dhjetëshat: 20 + 10 = 30", "30 + 8 = 38"]
+        },
+        {
+          "id": "add_std_002",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 45 + 27?",
+          "options": [72, 62, 82, 71],
+          "correctAnswer": 72,
+          "hints": ["45 = 40 + 5, 27 = 20 + 7", "40 + 20 = 60", "5 + 7 = 12, gjithsej 72"]
+        },
+        {
+          "id": "add_std_003",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 36 + 44?",
+          "options": [80, 70, 90, 76],
+          "correctAnswer": 80,
+          "hints": ["6 + 4 = 10", "30 + 40 = 70", "70 + 10 = 80"]
+        },
+        {
+          "id": "add_std_004",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 18 + 32?",
+          "options": [50, 40, 48, 52],
+          "correctAnswer": 50,
+          "hints": ["18 + 2 = 20", "20 + 30 = 50"]
+        },
+        {
+          "id": "add_std_005",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 54 + 29?",
+          "options": [83, 73, 93, 82],
+          "correctAnswer": 83,
+          "hints": ["29 është afër 30", "54 + 30 = 84", "84 - 1 = 83"]
+        },
+        {
+          "id": "add_std_006",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 67 + 23?",
+          "options": [90, 80, 100, 85],
+          "correctAnswer": 90,
+          "hints": ["7 + 3 = 10", "60 + 20 = 80", "80 + 10 = 90"]
+        },
+        {
+          "id": "add_std_007",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 42 + 38?",
+          "options": [80, 70, 90, 75],
+          "correctAnswer": 80,
+          "hints": ["2 + 8 = 10", "40 + 30 = 70", "70 + 10 = 80"]
+        },
+        {
+          "id": "add_std_008",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 55 + 25?",
+          "options": [80, 70, 90, 75],
+          "correctAnswer": 80,
+          "hints": ["5 + 5 = 10", "50 + 20 = 70", "70 + 10 = 80"]
+        },
+        {
+          "id": "add_std_009",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 156 + 243?",
+          "options": [399, 389, 409, 379],
+          "correctAnswer": 399,
+          "hints": ["100 + 200 = 300", "50 + 40 = 90", "6 + 3 = 9, gjithsej 399"]
+        },
+        {
+          "id": "add_std_010",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 278 + 145?",
+          "options": [423, 413, 433, 323],
+          "correctAnswer": 423,
+          "hints": ["8 + 5 = 13, shkruaj 3 mbart 1", "7 + 4 + 1 = 12, shkruaj 2 mbart 1", "2 + 1 + 1 = 4"]
+        },
+        {
+          "id": "add_std_011",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 367 + 258?",
+          "options": [625, 615, 525, 635],
+          "correctAnswer": 625,
+          "hints": ["7 + 8 = 15", "6 + 5 + 1 = 12", "3 + 2 + 1 = 6"]
+        },
+        {
+          "id": "add_std_012",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 489 + 311?",
+          "options": [800, 790, 810, 700],
+          "correctAnswer": 800,
+          "hints": ["9 + 1 = 10", "8 + 1 + 1 = 10", "4 + 3 + 1 = 8"]
+        },
+        {
+          "id": "add_std_013",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 534 + 299?",
+          "options": [833, 823, 733, 843],
+          "correctAnswer": 833,
+          "hints": ["299 është afër 300", "534 + 300 = 834", "834 - 1 = 833"]
+        },
+        {
+          "id": "add_std_014",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 425 + 386?",
+          "options": [811, 801, 821, 711],
+          "correctAnswer": 811,
+          "hints": ["5 + 6 = 11", "2 + 8 + 1 = 11", "4 + 3 + 1 = 8"]
+        },
+        {
+          "id": "add_std_015",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 246 + 354?",
+          "options": [600, 590, 610, 500],
+          "correctAnswer": 600,
+          "hints": ["6 + 4 = 10", "4 + 5 + 1 = 10", "2 + 3 + 1 = 6"]
+        },
+        {
+          "id": "add_std_016",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 178 + 456?",
+          "options": [634, 624, 644, 534],
+          "correctAnswer": 634,
+          "hints": ["8 + 6 = 14", "7 + 5 + 1 = 13", "1 + 4 + 1 = 6"]
+        },
+        {
+          "id": "add_std_017",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 593 + 207?",
+          "options": [800, 790, 810, 700],
+          "correctAnswer": 800,
+          "hints": ["3 + 7 = 10", "9 + 0 + 1 = 10", "5 + 2 + 1 = 8"]
+        },
+        {
+          "id": "add_std_018",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 34 + 26?",
+          "options": [60, 50, 70, 55],
+          "correctAnswer": 60,
+          "hints": ["4 + 6 = 10", "30 + 20 = 50", "50 + 10 = 60"]
+        },
+        {
+          "id": "add_std_019",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 47 + 33?",
+          "options": [80, 70, 90, 75],
+          "correctAnswer": 80,
+          "hints": ["7 + 3 = 10", "40 + 30 = 70", "70 + 10 = 80"]
+        },
+        {
+          "id": "add_std_020",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 58 + 24?",
+          "options": [82, 72, 92, 78],
+          "correctAnswer": 82,
+          "hints": ["8 + 4 = 12", "50 + 20 = 70", "70 + 12 = 82"]
+        },
+        {
+          "id": "add_std_021",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 63 + 19?",
+          "options": [82, 72, 92, 78],
+          "correctAnswer": 82,
+          "hints": ["19 është afër 20", "63 + 20 = 83", "83 - 1 = 82"]
+        },
+        {
+          "id": "add_std_022",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 75 + 15?",
+          "options": [90, 80, 100, 85],
+          "correctAnswer": 90,
+          "hints": ["5 + 5 = 10", "70 + 10 = 80", "80 + 10 = 90"]
+        },
+        {
+          "id": "add_std_023",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 168 + 247?",
+          "options": [415, 405, 425, 315],
+          "correctAnswer": 415,
+          "hints": ["8 + 7 = 15", "6 + 4 + 1 = 11", "1 + 2 + 1 = 4"]
+        },
+        {
+          "id": "add_std_024",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 329 + 471?",
+          "options": [800, 790, 810, 700],
+          "correctAnswer": 800,
+          "hints": ["9 + 1 = 10", "2 + 7 + 1 = 10", "3 + 4 + 1 = 8"]
+        },
+        {
+          "id": "add_std_025",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 456 + 244?",
+          "options": [700, 690, 710, 600],
+          "correctAnswer": 700,
+          "hints": ["6 + 4 = 10", "5 + 4 + 1 = 10", "4 + 2 + 1 = 7"]
+        },
+        {
+          "id": "add_std_026",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 187 + 513?",
+          "options": [700, 690, 710, 600],
+          "correctAnswer": 700,
+          "hints": ["7 + 3 = 10", "8 + 1 + 1 = 10", "1 + 5 + 1 = 7"]
+        },
+        {
+          "id": "add_std_027",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 264 + 536?",
+          "options": [800, 790, 810, 700],
+          "correctAnswer": 800,
+          "hints": ["4 + 6 = 10", "6 + 3 + 1 = 10", "2 + 5 + 1 = 8"]
+        },
+        {
+          "id": "add_std_028",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 81 + 19?",
+          "options": [100, 90, 110, 95],
+          "correctAnswer": 100,
+          "hints": ["1 + 9 = 10", "80 + 10 = 90", "90 + 10 = 100"]
+        },
+        {
+          "id": "add_std_029",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 56 + 44?",
+          "options": [100, 90, 110, 95],
+          "correctAnswer": 100,
+          "hints": ["6 + 4 = 10", "50 + 40 = 90", "90 + 10 = 100"]
+        },
+        {
+          "id": "add_std_030",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 73 + 27?",
+          "options": [100, 90, 110, 95],
+          "correctAnswer": 100,
+          "hints": ["3 + 7 = 10", "70 + 20 = 90", "90 + 10 = 100"]
+        },
+        {
+          "id": "add_chall_001",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Noari ka 25 figurina. Babai i dhuroi edhe 18 të tjera. Sa figurina ka tani Noari?",
+          "options": [43, 33, 53, 42],
+          "correctAnswer": 43,
+          "hints": ["Kjo është mbledhje: 25 + 18", "5 + 8 = 13, shkruaj 3 mbart 1", "2 + 1 + 1 = 4"]
+        },
+        {
+          "id": "add_chall_002",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Në klasë ka 14 djem dhe 12 vajza. Sa nxënës ka gjithsej klasa?",
+          "options": [26, 24, 28, 22],
+          "correctAnswer": 26,
+          "hints": ["Mblidh djemtë dhe vajzat", "14 + 12", "14 + 12 = 26"]
+        },
+        {
+          "id": "add_chall_003",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Arta ka 245 mollë dhe Beni ka 178 mollë. Sa mollë kanë gjithsej?",
+          "options": [423, 413, 433, 323],
+          "correctAnswer": 423,
+          "hints": ["245 + 178", "5 + 8 = 13, 4 + 7 + 1 = 12", "2 + 1 + 1 = 4, gjithsej 423"]
+        },
+        {
+          "id": "add_chall_004",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Një tren ka 125 pasagjerë. Në stacion hipën edhe 87. Sa pasagjerë ka tani treni?",
+          "options": [212, 202, 222, 192],
+          "correctAnswer": 212,
+          "hints": ["125 + 87", "5 + 7 = 12, mbart 1", "2 + 8 + 1 = 11, mbart 1"]
+        },
+        {
+          "id": "add_chall_005",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Në shkollë ka 356 nxënës meshkuj dhe 289 femra. Sa nxënës ka gjithsej shkolla?",
+          "options": [645, 635, 655, 545],
+          "correctAnswer": 645,
+          "hints": ["356 + 289", "6 + 9 = 15, 5 + 8 + 1 = 14", "3 + 2 + 1 = 6"]
+        },
+        {
+          "id": "add_chall_006",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Noari bleu 3 pako me ngjitëse. Çdo pako ka 15 ngjitëse. Babai i dha edhe 8 ngjitëse. Sa ngjitëse ka tani?",
+          "options": [53, 45, 48, 50],
+          "correctAnswer": 53,
+          "hints": ["3 × 15 = 45 ngjitëse nga pakot", "45 + 8 = 53", "Gjithsej 53 ngjitëse"]
+        },
+        {
+          "id": "add_chall_007",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Në fermë ka 34 dele dhe 26 dhi. Sa kafshë ka gjithsej ferma?",
+          "options": [60, 50, 70, 55],
+          "correctAnswer": 60,
+          "hints": ["34 + 26", "4 + 6 = 10", "30 + 20 = 50, gjithsej 60"]
+        },
+        {
+          "id": "add_chall_008",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Autobus A ka 45 pasagjerë dhe autobus B ka 38. Sa pasagjerë kanë dy autobusët?",
+          "options": [83, 73, 93, 82],
+          "correctAnswer": 83,
+          "hints": ["45 + 38", "5 + 8 = 13", "40 + 30 = 70, gjithsej 83"]
+        },
+        {
+          "id": "add_chall_009",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? 34 + ___ = 50",
+          "options": [16, 14, 18, 24],
+          "correctAnswer": 16,
+          "hints": ["Sa duhet shtuar 34 për të arritur 50?", "50 - 34 = ?", "50 - 34 = 16"]
+        },
+        {
+          "id": "add_chall_010",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? 27 + ___ = 45",
+          "options": [18, 16, 20, 22],
+          "correctAnswer": 18,
+          "hints": ["Mendo: sa duhet shtuar?", "45 - 27 = ?", "45 - 27 = 18"]
+        },
+        {
+          "id": "add_chall_011",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? ___ + 35 = 72",
+          "options": [37, 35, 39, 33],
+          "correctAnswer": 37,
+          "hints": ["? + 35 = 72", "72 - 35 = ?", "72 - 35 = 37"]
+        },
+        {
+          "id": "add_chall_012",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 3,
+          "questionAl": "Cili numër mungon? 156 + ___ = 300",
+          "options": [144, 154, 134, 164],
+          "correctAnswer": 144,
+          "hints": ["Sa duhet shtuar për të arritur 300?", "300 - 156 = ?", "300 - 156 = 144"]
+        },
+        {
+          "id": "add_chall_013",
+          "type": "challenge",
+          "subtype": "pyramid",
+          "difficulty": 2,
+          "questionAl": "PIRAMIDË: Mblidh dy numrat poshtë. [?] sipër [12] dhe [9] poshtë. Cili numër shkon lart?",
+          "options": [21, 20, 22, 19],
+          "correctAnswer": 21,
+          "hints": ["Mblidh 12 + 9", "Piramida: poshtë + poshtë = sipër", "12 + 9 = 21"]
+        },
+        {
+          "id": "add_chall_014",
+          "type": "challenge",
+          "subtype": "pyramid",
+          "difficulty": 2,
+          "questionAl": "PIRAMIDË: [20] sipër, [?] dhe [12] poshtë. Cili numër mungon majtas?",
+          "options": [8, 9, 7, 10],
+          "correctAnswer": 8,
+          "hints": ["? + 12 = 20", "Sa duhet shtuar 12 për 20?", "20 - 12 = 8"]
+        },
+        {
+          "id": "add_chall_015",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 2,
+          "questionAl": "Gjej numrin tjetër në varg: 5, 10, 15, 20, ?",
+          "options": [25, 24, 26, 30],
+          "correctAnswer": 25,
+          "hints": ["Shiko ndryshimin: 10-5=5", "Vargu rritet me 5", "20 + 5 = 25"]
+        },
+        {
+          "id": "add_chall_016",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 2,
+          "questionAl": "Gjej numrin që mungon: 12, 15, ?, 21, 24",
+          "options": [18, 17, 19, 16],
+          "correctAnswer": 18,
+          "hints": ["Vargu rritet me 3", "15 + 3 = ?", "15 + 3 = 18"]
+        },
+        {
+          "id": "add_chall_017",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 2,
+          "questionAl": "Gjej numrin tjetër: 100, 110, 120, 130, ?",
+          "options": [140, 135, 145, 150],
+          "correctAnswer": 140,
+          "hints": ["Rritet me 10", "130 + 10 = ?", "130 + 10 = 140"]
+        },
+        {
+          "id": "add_chall_018",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Sa bën 456 + 378 + 166?",
+          "options": [1000, 990, 1010, 900],
+          "correctAnswer": 1000,
+          "hints": ["456 + 378 = 834", "834 + 166 = ?", "834 + 166 = 1000"]
+        },
+        {
+          "id": "add_chall_019",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Një libër ka 120 faqe. Noari lexoi 45 faqe ditën e parë dhe 38 ditën e dytë. Sa faqe lexoi gjithsej?",
+          "options": [83, 73, 93, 82],
+          "correctAnswer": 83,
+          "hints": ["45 + 38", "5 + 8 = 13", "40 + 30 = 70, gjithsej 83"]
+        },
+        {
+          "id": "add_chall_020",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Stacioni A është 75 km larg B. Stacioni B është 86 km larg C. Sa km janë A dhe C larg?",
+          "options": [161, 151, 171, 141],
+          "correctAnswer": 161,
+          "hints": ["75 + 86", "5 + 6 = 11", "70 + 80 = 150, gjithsej 161"]
+        }
+      ]
+    },
+    "zbritja": {
+      "titleAl": "Zbritja",
+      "icon": "➖",
+      "questions": [
+        {
+          "id": "sub_std_001",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 45 - 23?",
+          "options": [22, 32, 12, 28],
+          "correctAnswer": 22,
+          "hints": ["5 - 3 = 2", "4 - 2 = 2", "Përgjigja: 22"]
+        },
+        {
+          "id": "sub_std_002",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 67 - 35?",
+          "options": [32, 42, 22, 33],
+          "correctAnswer": 32,
+          "hints": ["7 - 5 = 2", "6 - 3 = 3", "Përgjigja: 32"]
+        },
+        {
+          "id": "sub_std_003",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 80 - 36?",
+          "options": [44, 54, 34, 46],
+          "correctAnswer": 44,
+          "hints": ["0 - 6 nuk mundemi, marrim hua", "10 - 6 = 4", "7 - 3 = 4"]
+        },
+        {
+          "id": "sub_std_004",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 92 - 47?",
+          "options": [45, 55, 35, 43],
+          "correctAnswer": 45,
+          "hints": ["2 - 7: marrim hua", "12 - 7 = 5", "8 - 4 = 4"]
+        },
+        {
+          "id": "sub_std_005",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 75 - 28?",
+          "options": [47, 57, 37, 53],
+          "correctAnswer": 47,
+          "hints": ["5 - 8: marrim hua", "15 - 8 = 7", "6 - 2 = 4"]
+        },
+        {
+          "id": "sub_std_006",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 63 - 29?",
+          "options": [34, 44, 24, 32],
+          "correctAnswer": 34,
+          "hints": ["3 - 9: marrim hua", "13 - 9 = 4", "5 - 2 = 3"]
+        },
+        {
+          "id": "sub_std_007",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 54 - 18?",
+          "options": [36, 46, 26, 42],
+          "correctAnswer": 36,
+          "hints": ["4 - 8: marrim hua", "14 - 8 = 6", "4 - 1 = 3"]
+        },
+        {
+          "id": "sub_std_008",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 81 - 45?",
+          "options": [36, 46, 26, 34],
+          "correctAnswer": 36,
+          "hints": ["1 - 5: marrim hua", "11 - 5 = 6", "7 - 4 = 3"]
+        },
+        {
+          "id": "sub_std_009",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 543 - 267?",
+          "options": [276, 286, 266, 376],
+          "correctAnswer": 276,
+          "hints": ["3 - 7: marrim hua, 13 - 7 = 6", "3 - 6: marrim hua, 13 - 6 = 7", "4 - 2 = 2"]
+        },
+        {
+          "id": "sub_std_010",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 700 - 358?",
+          "options": [342, 352, 332, 442],
+          "correctAnswer": 342,
+          "hints": ["700 - 358", "700 - 300 = 400", "400 - 58 = 342"]
+        },
+        {
+          "id": "sub_std_011",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 812 - 456?",
+          "options": [356, 346, 366, 256],
+          "correctAnswer": 356,
+          "hints": ["2 - 6: marrim hua", "0 - 5: marrim hua", "7 - 4 = 3"]
+        },
+        {
+          "id": "sub_std_012",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 600 - 245?",
+          "options": [355, 345, 365, 455],
+          "correctAnswer": 355,
+          "hints": ["0 - 5: marrim hua", "9 - 4 = 5", "5 - 2 = 3"]
+        },
+        {
+          "id": "sub_std_013",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 925 - 468?",
+          "options": [457, 447, 467, 357],
+          "correctAnswer": 457,
+          "hints": ["5 - 8: marrim hua", "1 - 6: marrim hua", "8 - 4 = 4"]
+        },
+        {
+          "id": "sub_std_014",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 783 - 295?",
+          "options": [488, 478, 498, 388],
+          "correctAnswer": 488,
+          "hints": ["3 - 5: marrim hua", "7 - 9: marrim hua", "6 - 2 = 4"]
+        },
+        {
+          "id": "sub_std_015",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 500 - 167?",
+          "options": [333, 343, 323, 433],
+          "correctAnswer": 333,
+          "hints": ["0 - 7: marrim hua", "9 - 6 = 3", "4 - 1 = 3"]
+        },
+        {
+          "id": "sub_std_016",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 847 - 359?",
+          "options": [488, 478, 498, 388],
+          "correctAnswer": 488,
+          "hints": ["7 - 9: marrim hua", "3 - 5: marrim hua", "7 - 3 = 4"]
+        },
+        {
+          "id": "sub_std_017",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 56 - 28?",
+          "options": [28, 38, 18, 26],
+          "correctAnswer": 28,
+          "hints": ["6 - 8: marrim hua", "16 - 8 = 8", "4 - 2 = 2"]
+        },
+        {
+          "id": "sub_std_018",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 70 - 35?",
+          "options": [35, 45, 25, 40],
+          "correctAnswer": 35,
+          "hints": ["0 - 5: marrim hua", "10 - 5 = 5", "6 - 3 = 3"]
+        },
+        {
+          "id": "sub_std_019",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 84 - 37?",
+          "options": [47, 57, 37, 53],
+          "correctAnswer": 47,
+          "hints": ["4 - 7: marrim hua", "14 - 7 = 7", "7 - 3 = 4"]
+        },
+        {
+          "id": "sub_std_020",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 91 - 46?",
+          "options": [45, 55, 35, 43],
+          "correctAnswer": 45,
+          "hints": ["1 - 6: marrim hua", "11 - 6 = 5", "8 - 4 = 4"]
+        },
+        {
+          "id": "sub_std_021",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 100 - 37?",
+          "options": [63, 73, 53, 67],
+          "correctAnswer": 63,
+          "hints": ["100 - 37", "100 - 40 = 60", "60 + 3 = 63"]
+        },
+        {
+          "id": "sub_std_022",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 100 - 48?",
+          "options": [52, 62, 42, 58],
+          "correctAnswer": 52,
+          "hints": ["100 - 48", "100 - 50 = 50", "50 + 2 = 52"]
+        },
+        {
+          "id": "sub_std_023",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 456 - 178?",
+          "options": [278, 288, 268, 378],
+          "correctAnswer": 278,
+          "hints": ["6 - 8: marrim hua", "4 - 7: marrim hua", "3 - 1 = 2"]
+        },
+        {
+          "id": "sub_std_024",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 623 - 245?",
+          "options": [378, 388, 368, 478],
+          "correctAnswer": 378,
+          "hints": ["3 - 5: marrim hua", "1 - 4: marrim hua", "5 - 2 = 3"]
+        },
+        {
+          "id": "sub_std_025",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 800 - 456?",
+          "options": [344, 354, 334, 444],
+          "correctAnswer": 344,
+          "hints": ["0 - 6: marrim hua", "9 - 5 = 4", "7 - 4 = 3"]
+        },
+        {
+          "id": "sub_std_026",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 1000 - 645?",
+          "options": [355, 345, 365, 455],
+          "correctAnswer": 355,
+          "hints": ["1000 - 645", "1000 - 600 = 400", "400 - 45 = 355"]
+        },
+        {
+          "id": "sub_std_027",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 734 - 567?",
+          "options": [167, 177, 157, 267],
+          "correctAnswer": 167,
+          "hints": ["4 - 7: marrim hua", "2 - 6: marrim hua", "6 - 5 = 1"]
+        },
+        {
+          "id": "sub_std_028",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 65 - 27?",
+          "options": [38, 48, 28, 42],
+          "correctAnswer": 38,
+          "hints": ["5 - 7: marrim hua", "15 - 7 = 8", "5 - 2 = 3"]
+        },
+        {
+          "id": "sub_std_029",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 73 - 38?",
+          "options": [35, 45, 25, 33],
+          "correctAnswer": 35,
+          "hints": ["3 - 8: marrim hua", "13 - 8 = 5", "6 - 3 = 3"]
+        },
+        {
+          "id": "sub_std_030",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 82 - 45?",
+          "options": [37, 47, 27, 33],
+          "correctAnswer": 37,
+          "hints": ["2 - 5: marrim hua", "12 - 5 = 7", "7 - 4 = 3"]
+        },
+        {
+          "id": "sub_chall_001",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Noari kishte 32 letra. Dërgoi 15 te miku. Sa letra i mbetën?",
+          "options": [17, 27, 7, 22],
+          "correctAnswer": 17,
+          "hints": ["32 - 15", "12 - 5 = 7, huazuam", "2 - 1 = 1"]
+        },
+        {
+          "id": "sub_chall_002",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Një librari kishte 850 libra. U shitën 367 libra. Sa libra mbetën?",
+          "options": [483, 493, 473, 583],
+          "correctAnswer": 483,
+          "hints": ["850 - 367", "10 - 7 = 3, huazuam", "3 - 6: huazuam nga 8"]
+        },
+        {
+          "id": "sub_chall_003",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Nga 1000 lekë, Ana bleu një dhuratë 645 lekë. Sa lekë i mbetën?",
+          "options": [355, 365, 345, 455],
+          "correctAnswer": 355,
+          "hints": ["1000 - 645", "1000 - 600 = 400", "400 - 45 = 355"]
+        },
+        {
+          "id": "sub_chall_004",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Një autobus kishte 56 pasagjerë. Në stacion zbritën 29. Sa pasagjerë mbetën?",
+          "options": [27, 37, 17, 25],
+          "correctAnswer": 27,
+          "hints": ["56 - 29", "16 - 9 = 7, huazuam", "4 - 2 = 2"]
+        },
+        {
+          "id": "sub_chall_005",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Gjyshi ka 100 vjeç. Babai ka 65 vjeç. Sa vjet më shumë ka gjyshi?",
+          "options": [35, 45, 25, 55],
+          "correctAnswer": 35,
+          "hints": ["100 - 65", "100 - 60 = 40", "40 - 5 = 35"]
+        },
+        {
+          "id": "sub_chall_006",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Në dyqan kishte 450 vezë. U shitën 178. Sa vezë mbetën?",
+          "options": [272, 282, 262, 372],
+          "correctAnswer": 272,
+          "hints": ["450 - 178", "10 - 8 = 2, huazuam", "4 - 7: huazuam"]
+        },
+        {
+          "id": "sub_chall_007",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? 75 - ___ = 48",
+          "options": [27, 23, 37, 17],
+          "correctAnswer": 27,
+          "hints": ["75 - ? = 48", "75 - 48 = ?", "75 - 48 = 27"]
+        },
+        {
+          "id": "sub_chall_008",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? ___ - 28 = 45",
+          "options": [73, 63, 83, 67],
+          "correctAnswer": 73,
+          "hints": ["? - 28 = 45", "45 + 28 = ?", "45 + 28 = 73"]
+        },
+        {
+          "id": "sub_chall_009",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 3,
+          "questionAl": "Cili numër mungon? 500 - ___ = 235",
+          "options": [265, 255, 275, 245],
+          "correctAnswer": 265,
+          "hints": ["500 - ? = 235", "500 - 235 = ?", "500 - 235 = 265"]
+        },
+        {
+          "id": "sub_chall_010",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 2,
+          "questionAl": "Gjej numrin tjetër: 30, 25, 20, 15, ?",
+          "options": [10, 11, 9, 12],
+          "correctAnswer": 10,
+          "hints": ["Vargu zvogëlohet me 5", "15 - 5 = ?", "15 - 5 = 10"]
+        },
+        {
+          "id": "sub_chall_011",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 2,
+          "questionAl": "Gjej numrin që mungon: 50, 45, ?, 35, 30",
+          "options": [40, 41, 39, 42],
+          "correctAnswer": 40,
+          "hints": ["Zvogëlohet me 5", "45 - 5 = ?", "45 - 5 = 40"]
+        },
+        {
+          "id": "sub_chall_012",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Nëse A - 15 = 23, sa është A?",
+          "options": [38, 37, 39, 36],
+          "correctAnswer": 38,
+          "hints": ["A = 23 + 15", "Mbledhja e kundërt", "23 + 15 = 38"]
+        },
+        {
+          "id": "sub_chall_013",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Lulishte bëri 96 buqeta. Ditën e parë shiti 38 buqeta. Sa buqeta mbetën?",
+          "options": [58, 68, 48, 56],
+          "correctAnswer": 58,
+          "hints": ["96 - 38", "16 - 8 = 8, huazuam", "8 - 3 = 5"]
+        },
+        {
+          "id": "sub_chall_014",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Noari kishte 80 centë. Bleu ëmbëlsira 35 centë. Sa centë i mbetën?",
+          "options": [45, 55, 35, 40],
+          "correctAnswer": 45,
+          "hints": ["80 - 35", "10 - 5 = 5, huazuam", "7 - 3 = 4"]
+        },
+        {
+          "id": "sub_chall_015",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Shkolla ka 645 nxënës. 278 janë në klasën e parë. Sa nxënës janë në klasat e tjera?",
+          "options": [367, 357, 377, 467],
+          "correctAnswer": 367,
+          "hints": ["645 - 278", "5 - 8: huazuam", "3 - 7: huazuam"]
+        },
+        {
+          "id": "sub_chall_016",
+          "type": "challenge",
+          "subtype": "pyramid",
+          "difficulty": 2,
+          "questionAl": "PIRAMIDË ZBRITJEJE: [15] sipër, [9] majtas, [?] djathtas. 15 - 9 = ?",
+          "options": [6, 5, 7, 4],
+          "correctAnswer": 6,
+          "hints": ["15 - 9 = ?", "Sipër - majtas = djathtas", "15 - 9 = 6"]
+        },
+        {
+          "id": "sub_chall_017",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Në kopsht ka 47 fëmijë. 19 janë djem. Sa vajza ka kopshti?",
+          "options": [28, 38, 18, 26],
+          "correctAnswer": 28,
+          "hints": ["47 - 19", "17 - 9 = 8, huazuam", "3 - 1 = 2"]
+        },
+        {
+          "id": "sub_chall_018",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 2,
+          "questionAl": "Gjej numrin tjetër: 100, 90, 80, 70, ?",
+          "options": [60, 65, 55, 50],
+          "correctAnswer": 60,
+          "hints": ["Zvogëlohet me 10", "70 - 10 = ?", "70 - 10 = 60"]
+        },
+        {
+          "id": "sub_chall_019",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Treni kishte 320 pasagjerë. Në stacion zbritën 145 dhe hipën 78. Sa pasagjerë ka tani?",
+          "options": [253, 243, 263, 233],
+          "correctAnswer": 253,
+          "hints": ["320 - 145 = 175", "175 + 78 = ?", "175 + 78 = 253"]
+        },
+        {
+          "id": "sub_chall_020",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 3,
+          "questionAl": "Gjej X: X - 156 = 244",
+          "options": [400, 390, 410, 380],
+          "correctAnswer": 400,
+          "hints": ["X = 244 + 156", "Mblidh numrat", "244 + 156 = 400"]
+        }
+      ]
+    },
+    "shumezimi": {
+      "titleAl": "Shumëzimi",
+      "icon": "✖️",
+      "questions": [
+        {
+          "id": "mul_std_001",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 3 × 4?",
+          "options": [12, 7, 14, 10],
+          "correctAnswer": 12,
+          "hints": ["3 grupe me 4", "4 + 4 + 4", "= 12"]
+        },
+        {
+          "id": "mul_std_002",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 5 × 6?",
+          "options": [30, 25, 35, 11],
+          "correctAnswer": 30,
+          "hints": ["5 grupe me 6", "6 + 6 + 6 + 6 + 6", "= 30"]
+        },
+        {
+          "id": "mul_std_003",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 7 × 8?",
+          "options": [56, 54, 48, 63],
+          "correctAnswer": 56,
+          "hints": ["Tabela e shumëzimit", "7 × 8", "= 56"]
+        },
+        {
+          "id": "mul_std_004",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 9 × 7?",
+          "options": [63, 72, 54, 56],
+          "correctAnswer": 63,
+          "hints": ["9 × 7 = 10 × 7 - 7", "70 - 7", "= 63"]
+        },
+        {
+          "id": "mul_std_005",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 6 × 6?",
+          "options": [36, 30, 42, 32],
+          "correctAnswer": 36,
+          "hints": ["Katrori i 6", "6 × 6", "= 36"]
+        },
+        {
+          "id": "mul_std_006",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 8 × 9?",
+          "options": [72, 63, 81, 64],
+          "correctAnswer": 72,
+          "hints": ["8 × 9 = 8 × 10 - 8", "80 - 8", "= 72"]
+        },
+        {
+          "id": "mul_std_007",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 4 × 7?",
+          "options": [28, 21, 24, 32],
+          "correctAnswer": 28,
+          "hints": ["4 × 7", "7 + 7 + 7 + 7", "= 28"]
+        },
+        {
+          "id": "mul_std_008",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 5 × 9?",
+          "options": [45, 40, 50, 36],
+          "correctAnswer": 45,
+          "hints": ["5 × 9", "5 × 10 - 5 = 50 - 5", "= 45"]
+        },
+        {
+          "id": "mul_std_009",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 6 × 8?",
+          "options": [48, 42, 54, 40],
+          "correctAnswer": 48,
+          "hints": ["6 × 8", "6 × 8 = 6 × 4 × 2 = 24 × 2", "= 48"]
+        },
+        {
+          "id": "mul_std_010",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 7 × 7?",
+          "options": [49, 42, 56, 36],
+          "correctAnswer": 49,
+          "hints": ["Katrori i 7", "7 × 7", "= 49"]
+        },
+        {
+          "id": "mul_std_011",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 12 × 5?",
+          "options": [60, 50, 55, 65],
+          "correctAnswer": 60,
+          "hints": ["12 = 10 + 2", "10 × 5 = 50, 2 × 5 = 10", "50 + 10 = 60"]
+        },
+        {
+          "id": "mul_std_012",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 15 × 4?",
+          "options": [60, 54, 64, 56],
+          "correctAnswer": 60,
+          "hints": ["15 × 4 = 15 × 2 × 2", "15 × 2 = 30", "30 × 2 = 60"]
+        },
+        {
+          "id": "mul_std_013",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 23 × 3?",
+          "options": [69, 63, 66, 79],
+          "correctAnswer": 69,
+          "hints": ["20 × 3 = 60", "3 × 3 = 9", "60 + 9 = 69"]
+        },
+        {
+          "id": "mul_std_014",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 18 × 4?",
+          "options": [72, 62, 82, 64],
+          "correctAnswer": 72,
+          "hints": ["18 × 4 = 20 × 4 - 2 × 4", "80 - 8", "= 72"]
+        },
+        {
+          "id": "mul_std_015",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 25 × 3?",
+          "options": [75, 65, 85, 70],
+          "correctAnswer": 75,
+          "hints": ["25 × 3", "20 × 3 = 60, 5 × 3 = 15", "60 + 15 = 75"]
+        },
+        {
+          "id": "mul_std_016",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 16 × 5?",
+          "options": [80, 70, 90, 75],
+          "correctAnswer": 80,
+          "hints": ["16 × 5", "10 × 5 = 50, 6 × 5 = 30", "50 + 30 = 80"]
+        },
+        {
+          "id": "mul_std_017",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 14 × 6?",
+          "options": [84, 74, 94, 80],
+          "correctAnswer": 84,
+          "hints": ["14 × 6", "10 × 6 = 60, 4 × 6 = 24", "60 + 24 = 84"]
+        },
+        {
+          "id": "mul_std_018",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 19 × 5?",
+          "options": [95, 85, 105, 90],
+          "correctAnswer": 95,
+          "hints": ["19 × 5 = 20 × 5 - 5", "100 - 5", "= 95"]
+        },
+        {
+          "id": "mul_std_019",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 24 × 4?",
+          "options": [96, 86, 106, 92],
+          "correctAnswer": 96,
+          "hints": ["24 × 4", "20 × 4 = 80, 4 × 4 = 16", "80 + 16 = 96"]
+        },
+        {
+          "id": "mul_std_020",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 32 × 3?",
+          "options": [96, 86, 106, 92],
+          "correctAnswer": 96,
+          "hints": ["32 × 3", "30 × 3 = 90, 2 × 3 = 6", "90 + 6 = 96"]
+        },
+        {
+          "id": "mul_std_021",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 8 × 5?",
+          "options": [40, 35, 45, 30],
+          "correctAnswer": 40,
+          "hints": ["8 × 5", "5 + 5 + 5 + 5 + 5 + 5 + 5 + 5", "= 40"]
+        },
+        {
+          "id": "mul_std_022",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 9 × 9?",
+          "options": [81, 72, 90, 63],
+          "correctAnswer": 81,
+          "hints": ["Katrori i 9", "9 × 9", "= 81"]
+        },
+        {
+          "id": "mul_std_023",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 6 × 7?",
+          "options": [42, 36, 48, 35],
+          "correctAnswer": 42,
+          "hints": ["6 × 7", "6 + 6 + 6 + 6 + 6 + 6 + 6", "= 42"]
+        },
+        {
+          "id": "mul_std_024",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 4 × 9?",
+          "options": [36, 32, 40, 27],
+          "correctAnswer": 36,
+          "hints": ["4 × 9", "9 + 9 + 9 + 9", "= 36"]
+        },
+        {
+          "id": "mul_std_025",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 3 × 8?",
+          "options": [24, 21, 27, 18],
+          "correctAnswer": 24,
+          "hints": ["3 × 8", "8 + 8 + 8", "= 24"]
+        },
+        {
+          "id": "mul_std_026",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 45 × 2?",
+          "options": [90, 80, 100, 85],
+          "correctAnswer": 90,
+          "hints": ["45 × 2", "Dyfisho 45", "= 90"]
+        },
+        {
+          "id": "mul_std_027",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 36 × 2?",
+          "options": [72, 62, 82, 68],
+          "correctAnswer": 72,
+          "hints": ["36 × 2", "Dyfisho 36", "= 72"]
+        },
+        {
+          "id": "mul_std_028",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 27 × 3?",
+          "options": [81, 71, 91, 78],
+          "correctAnswer": 81,
+          "hints": ["27 × 3", "20 × 3 = 60, 7 × 3 = 21", "60 + 21 = 81"]
+        },
+        {
+          "id": "mul_std_029",
+          "type": "standard",
+          "difficulty": 3,
+          "questionAl": "Sa bën 125 × 4?",
+          "options": [500, 400, 600, 450],
+          "correctAnswer": 500,
+          "hints": ["125 × 4", "100 × 4 = 400, 25 × 4 = 100", "400 + 100 = 500"]
+        },
+        {
+          "id": "mul_std_030",
+          "type": "standard",
+          "difficulty": 3,
+          "questionAl": "Sa bën 139 × 15?",
+          "options": [2085, 1985, 2185, 1885],
+          "correctAnswer": 2085,
+          "hints": ["139 × 15 = 139 × 10 + 139 × 5", "1390 + 695", "= 2085"]
+        },
+        {
+          "id": "mul_chall_001",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Nëse çdo kutia ka 8 laps, sa laps kanë 7 kutia?",
+          "options": [56, 48, 64, 54],
+          "correctAnswer": 56,
+          "hints": ["7 × 8", "7 kutia me 8 laps", "= 56 laps"]
+        },
+        {
+          "id": "mul_chall_002",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Një libër ka 45 faqe. Sa faqe kanë 4 libra të njëjtë?",
+          "options": [180, 170, 190, 160],
+          "correctAnswer": 180,
+          "hints": ["4 × 45", "4 × 40 = 160, 4 × 5 = 20", "160 + 20 = 180"]
+        },
+        {
+          "id": "mul_chall_003",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Një javë ka 7 ditë. Sa ditë kanë 4 javë?",
+          "options": [28, 21, 35, 24],
+          "correctAnswer": 28,
+          "hints": ["4 × 7", "4 javë me 7 ditë", "= 28 ditë"]
+        },
+        {
+          "id": "mul_chall_004",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Çdo fëmijë mori 6 bonbone. Sa bonbone morën 8 fëmijë?",
+          "options": [48, 42, 54, 36],
+          "correctAnswer": 48,
+          "hints": ["8 × 6", "8 fëmijë me 6 bonbone", "= 48 bonbone"]
+        },
+        {
+          "id": "mul_chall_005",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Një klasë ka 5 rreshta me nga 6 nxënës. Sa nxënës ka klasa?",
+          "options": [30, 25, 35, 24],
+          "correctAnswer": 30,
+          "hints": ["5 × 6", "5 rreshta me 6 nxënës", "= 30 nxënës"]
+        },
+        {
+          "id": "mul_chall_006",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Sa këmbë kanë 7 mace? (Çdo mace ka 4 këmbë)",
+          "options": [28, 21, 24, 32],
+          "correctAnswer": 28,
+          "hints": ["7 × 4", "7 mace me 4 këmbë", "= 28 këmbë"]
+        },
+        {
+          "id": "mul_chall_007",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Çdo kuti ka 9 trekëndësha. Sa trekëndësha kanë 5 kutia?",
+          "options": [45, 40, 50, 36],
+          "correctAnswer": 45,
+          "hints": ["5 × 9", "5 kutia me 9 trekëndësha", "= 45 trekëndësha"]
+        },
+        {
+          "id": "mul_chall_008",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Në çdo rresht ka 8 rrathë. Sa rrathë kanë 6 rreshta?",
+          "options": [48, 42, 54, 40],
+          "correctAnswer": 48,
+          "hints": ["6 × 8", "6 rreshta me 8 rrathë", "= 48 rrathë"]
+        },
+        {
+          "id": "mul_chall_009",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? ? × 6 = 42",
+          "options": [7, 6, 8, 9],
+          "correctAnswer": 7,
+          "hints": ["? × 6 = 42", "Sa 6-sha bëjnë 42?", "6 × 7 = 42"]
+        },
+        {
+          "id": "mul_chall_010",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? 8 × ? = 72",
+          "options": [9, 8, 7, 10],
+          "correctAnswer": 9,
+          "hints": ["8 × ? = 72", "Tabela e 8", "8 × 9 = 72"]
+        },
+        {
+          "id": "mul_chall_011",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? ? × 7 = 56",
+          "options": [8, 7, 9, 6],
+          "correctAnswer": 8,
+          "hints": ["? × 7 = 56", "Tabela e 7", "7 × 8 = 56"]
+        },
+        {
+          "id": "mul_chall_012",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 3,
+          "questionAl": "Gjej numrin tjetër: 3, 6, 12, 24, ?",
+          "options": [48, 36, 42, 50],
+          "correctAnswer": 48,
+          "hints": ["Çdo numër shumëzohet me 2", "24 × 2 = ?", "24 × 2 = 48"]
+        },
+        {
+          "id": "mul_chall_013",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 3,
+          "questionAl": "Gjej numrin tjetër: 2, 6, 18, 54, ?",
+          "options": [162, 108, 144, 180],
+          "correctAnswer": 162,
+          "hints": ["Çdo numër shumëzohet me 3", "54 × 3 = ?", "54 × 3 = 162"]
+        },
+        {
+          "id": "mul_chall_014",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Noari bleu 3 pako me stickers. Çdo pako ka 25 stickers. Sa stickers ka gjithsej?",
+          "options": [75, 65, 85, 70],
+          "correctAnswer": 75,
+          "hints": ["3 × 25", "3 pako me 25 stickers", "= 75 stickers"]
+        },
+        {
+          "id": "mul_chall_015",
+          "type": "challenge",
+          "subtype": "magic_table",
+          "difficulty": 2,
+          "questionAl": "TABELA: × | 3, Rreshti: 5 | ?. Sa bën 5 × 3?",
+          "options": [15, 12, 18, 8],
+          "correctAnswer": 15,
+          "hints": ["5 × 3", "5 grupe me 3", "= 15"]
+        },
+        {
+          "id": "mul_chall_016",
+          "type": "challenge",
+          "subtype": "magic_table",
+          "difficulty": 2,
+          "questionAl": "TABELA: × | 4, Rreshti: 7 | ?. Sa bën 7 × 4?",
+          "options": [28, 24, 32, 21],
+          "correctAnswer": 28,
+          "hints": ["7 × 4", "7 grupe me 4", "= 28"]
+        },
+        {
+          "id": "mul_chall_017",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Një kamion transporton 48 kuti në ditë. Sa kuti transporton në 5 ditë?",
+          "options": [240, 230, 250, 220],
+          "correctAnswer": 240,
+          "hints": ["5 × 48", "5 × 50 - 5 × 2 = 250 - 10", "= 240"]
+        },
+        {
+          "id": "mul_chall_018",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Sa krahë kanë 9 zogj? (Çdo zog ka 2 krahë)",
+          "options": [18, 16, 20, 14],
+          "correctAnswer": 18,
+          "hints": ["9 × 2", "9 zogj me 2 krahë", "= 18 krahë"]
+        },
+        {
+          "id": "mul_chall_019",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 3,
+          "questionAl": "Cili numër mungon? 12 × ? = 60",
+          "options": [5, 4, 6, 7],
+          "correctAnswer": 5,
+          "hints": ["12 × ? = 60", "60 ÷ 12 = ?", "60 ÷ 12 = 5"]
+        },
+        {
+          "id": "mul_chall_020",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Çdo muaj ka rreth 4 javë. Sa javë ka një vit (12 muaj)?",
+          "options": [48, 44, 52, 40],
+          "correctAnswer": 48,
+          "hints": ["12 × 4", "12 muaj me 4 javë", "= 48 javë"]
+        }
+      ]
+    },
+    "pjestimi": {
+      "titleAl": "Pjesëtimi",
+      "icon": "➗",
+      "questions": [
+        {
+          "id": "div_std_001",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 12 ÷ 4?",
+          "options": [3, 4, 2, 6],
+          "correctAnswer": 3,
+          "hints": ["Sa grupe me 4 bëjnë 12?", "4 + 4 + 4 = 12", "= 3 grupe"]
+        },
+        {
+          "id": "div_std_002",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 20 ÷ 5?",
+          "options": [4, 5, 3, 6],
+          "correctAnswer": 4,
+          "hints": ["Sa herë 5 hyn në 20?", "5 × 4 = 20", "= 4"]
+        },
+        {
+          "id": "div_std_003",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 36 ÷ 6?",
+          "options": [6, 5, 7, 8],
+          "correctAnswer": 6,
+          "hints": ["Tabela e 6", "6 × 6 = 36", "= 6"]
+        },
+        {
+          "id": "div_std_004",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 56 ÷ 8?",
+          "options": [7, 8, 6, 9],
+          "correctAnswer": 7,
+          "hints": ["8 × ? = 56", "8 × 7 = 56", "= 7"]
+        },
+        {
+          "id": "div_std_005",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 45 ÷ 5?",
+          "options": [9, 8, 10, 7],
+          "correctAnswer": 9,
+          "hints": ["5 × ? = 45", "5 × 9 = 45", "= 9"]
+        },
+        {
+          "id": "div_std_006",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 72 ÷ 8?",
+          "options": [9, 8, 10, 7],
+          "correctAnswer": 9,
+          "hints": ["8 × ? = 72", "8 × 9 = 72", "= 9"]
+        },
+        {
+          "id": "div_std_007",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 63 ÷ 9?",
+          "options": [7, 8, 6, 9],
+          "correctAnswer": 7,
+          "hints": ["9 × ? = 63", "9 × 7 = 63", "= 7"]
+        },
+        {
+          "id": "div_std_008",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 48 ÷ 6?",
+          "options": [8, 7, 9, 6],
+          "correctAnswer": 8,
+          "hints": ["6 × ? = 48", "6 × 8 = 48", "= 8"]
+        },
+        {
+          "id": "div_std_009",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 81 ÷ 9?",
+          "options": [9, 8, 7, 10],
+          "correctAnswer": 9,
+          "hints": ["81 është katrori i 9", "9 × 9 = 81", "= 9"]
+        },
+        {
+          "id": "div_std_010",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 54 ÷ 6?",
+          "options": [9, 8, 7, 10],
+          "correctAnswer": 9,
+          "hints": ["6 × ? = 54", "6 × 9 = 54", "= 9"]
+        },
+        {
+          "id": "div_std_011",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 72 ÷ 9?",
+          "options": [8, 7, 9, 6],
+          "correctAnswer": 8,
+          "hints": ["9 × ? = 72", "9 × 8 = 72", "= 8"]
+        },
+        {
+          "id": "div_std_012",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 84 ÷ 7?",
+          "options": [12, 11, 13, 14],
+          "correctAnswer": 12,
+          "hints": ["84 = 70 + 14", "70 ÷ 7 = 10, 14 ÷ 7 = 2", "10 + 2 = 12"]
+        },
+        {
+          "id": "div_std_013",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 96 ÷ 8?",
+          "options": [12, 11, 13, 10],
+          "correctAnswer": 12,
+          "hints": ["96 = 80 + 16", "80 ÷ 8 = 10, 16 ÷ 8 = 2", "10 + 2 = 12"]
+        },
+        {
+          "id": "div_std_014",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 108 ÷ 9?",
+          "options": [12, 11, 13, 10],
+          "correctAnswer": 12,
+          "hints": ["108 = 90 + 18", "90 ÷ 9 = 10, 18 ÷ 9 = 2", "10 + 2 = 12"]
+        },
+        {
+          "id": "div_std_015",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 64 ÷ 4?",
+          "options": [16, 15, 17, 14],
+          "correctAnswer": 16,
+          "hints": ["64 = 40 + 24", "40 ÷ 4 = 10, 24 ÷ 4 = 6", "10 + 6 = 16"]
+        },
+        {
+          "id": "div_std_016",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 75 ÷ 5?",
+          "options": [15, 14, 16, 13],
+          "correctAnswer": 15,
+          "hints": ["75 = 50 + 25", "50 ÷ 5 = 10, 25 ÷ 5 = 5", "10 + 5 = 15"]
+        },
+        {
+          "id": "div_std_017",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 120 ÷ 10?",
+          "options": [12, 11, 13, 10],
+          "correctAnswer": 12,
+          "hints": ["Pjesëto me 10", "Hiq një zero", "= 12"]
+        },
+        {
+          "id": "div_std_018",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 42 ÷ 7?",
+          "options": [6, 7, 5, 8],
+          "correctAnswer": 6,
+          "hints": ["7 × ? = 42", "7 × 6 = 42", "= 6"]
+        },
+        {
+          "id": "div_std_019",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 35 ÷ 7?",
+          "options": [5, 6, 4, 7],
+          "correctAnswer": 5,
+          "hints": ["7 × ? = 35", "7 × 5 = 35", "= 5"]
+        },
+        {
+          "id": "div_std_020",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 24 ÷ 4?",
+          "options": [6, 5, 7, 8],
+          "correctAnswer": 6,
+          "hints": ["4 × ? = 24", "4 × 6 = 24", "= 6"]
+        },
+        {
+          "id": "div_std_021",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 28 ÷ 4?",
+          "options": [7, 6, 8, 5],
+          "correctAnswer": 7,
+          "hints": ["4 × ? = 28", "4 × 7 = 28", "= 7"]
+        },
+        {
+          "id": "div_std_022",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 32 ÷ 8?",
+          "options": [4, 5, 3, 6],
+          "correctAnswer": 4,
+          "hints": ["8 × ? = 32", "8 × 4 = 32", "= 4"]
+        },
+        {
+          "id": "div_std_023",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 27 ÷ 3?",
+          "options": [9, 8, 10, 7],
+          "correctAnswer": 9,
+          "hints": ["3 × ? = 27", "3 × 9 = 27", "= 9"]
+        },
+        {
+          "id": "div_std_024",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 40 ÷ 8?",
+          "options": [5, 4, 6, 8],
+          "correctAnswer": 5,
+          "hints": ["8 × ? = 40", "8 × 5 = 40", "= 5"]
+        },
+        {
+          "id": "div_std_025",
+          "type": "standard",
+          "difficulty": 1,
+          "questionAl": "Sa bën 49 ÷ 7?",
+          "options": [7, 6, 8, 9],
+          "correctAnswer": 7,
+          "hints": ["49 është katrori i 7", "7 × 7 = 49", "= 7"]
+        },
+        {
+          "id": "div_std_026",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 60 ÷ 5?",
+          "options": [12, 10, 14, 11],
+          "correctAnswer": 12,
+          "hints": ["60 = 50 + 10", "50 ÷ 5 = 10, 10 ÷ 5 = 2", "10 + 2 = 12"]
+        },
+        {
+          "id": "div_std_027",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 90 ÷ 6?",
+          "options": [15, 14, 16, 13],
+          "correctAnswer": 15,
+          "hints": ["90 = 60 + 30", "60 ÷ 6 = 10, 30 ÷ 6 = 5", "10 + 5 = 15"]
+        },
+        {
+          "id": "div_std_028",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 100 ÷ 4?",
+          "options": [25, 20, 30, 24],
+          "correctAnswer": 25,
+          "hints": ["100 = 80 + 20", "80 ÷ 4 = 20, 20 ÷ 4 = 5", "20 + 5 = 25"]
+        },
+        {
+          "id": "div_std_029",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 144 ÷ 12?",
+          "options": [12, 11, 13, 10],
+          "correctAnswer": 12,
+          "hints": ["12 × 12 = 144", "Katrori i 12", "= 12"]
+        },
+        {
+          "id": "div_std_030",
+          "type": "standard",
+          "difficulty": 2,
+          "questionAl": "Sa bën 150 ÷ 10?",
+          "options": [15, 14, 16, 13],
+          "correctAnswer": 15,
+          "hints": ["Pjesëto me 10", "Hiq një zero", "= 15"]
+        },
+        {
+          "id": "div_chall_001",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Nëse 48 ëmbëlsira ndahen në 6 kuti, sa ëmbëlsira ka çdo kutia?",
+          "options": [8, 6, 9, 7],
+          "correctAnswer": 8,
+          "hints": ["48 ÷ 6", "6 × 8 = 48", "= 8 ëmbëlsira"]
+        },
+        {
+          "id": "div_chall_002",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "63 nxënës ndahen në 9 grupe të barabarta. Sa nxënës ka çdo grup?",
+          "options": [7, 6, 8, 9],
+          "correctAnswer": 7,
+          "hints": ["63 ÷ 9", "9 × 7 = 63", "= 7 nxënës"]
+        },
+        {
+          "id": "div_chall_003",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "32 laps ndahen në 8 kuti. Sa laps ka çdo kutia?",
+          "options": [4, 3, 5, 6],
+          "correctAnswer": 4,
+          "hints": ["32 ÷ 8", "8 × 4 = 32", "= 4 laps"]
+        },
+        {
+          "id": "div_chall_004",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Nëna ndau 42 bonbone në 7 ditë. Sa bonbone në ditë?",
+          "options": [6, 7, 5, 8],
+          "correctAnswer": 6,
+          "hints": ["42 ÷ 7", "7 × 6 = 42", "= 6 bonbone"]
+        },
+        {
+          "id": "div_chall_005",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "56 nxënës ulen në banka me nga 2. Sa banka duhen?",
+          "options": [28, 24, 32, 26],
+          "correctAnswer": 28,
+          "hints": ["56 ÷ 2", "Gjysmoji 56", "= 28 banka"]
+        },
+        {
+          "id": "div_chall_006",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Një libër ka 96 faqe. Nëse lexoj 8 faqe në ditë, për sa ditë e mbaroj?",
+          "options": [12, 10, 14, 8],
+          "correctAnswer": 12,
+          "hints": ["96 ÷ 8", "8 × 12 = 96", "= 12 ditë"]
+        },
+        {
+          "id": "div_chall_007",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "35 diamante ndahen në 5 kuti. Sa diamante ka çdo kutia?",
+          "options": [7, 6, 8, 5],
+          "correctAnswer": 7,
+          "hints": ["35 ÷ 5", "5 × 7 = 35", "= 7 diamante"]
+        },
+        {
+          "id": "div_chall_008",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "27 trekëndësha ndahen në 9 grupe. Sa trekëndësha ka çdo grup?",
+          "options": [3, 2, 4, 5],
+          "correctAnswer": 3,
+          "hints": ["27 ÷ 9", "9 × 3 = 27", "= 3 trekëndësha"]
+        },
+        {
+          "id": "div_chall_009",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? ? ÷ 5 = 7",
+          "options": [35, 30, 40, 25],
+          "correctAnswer": 35,
+          "hints": ["? ÷ 5 = 7", "5 × 7 = ?", "5 × 7 = 35"]
+        },
+        {
+          "id": "div_chall_010",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? 56 ÷ ? = 8",
+          "options": [7, 6, 8, 9],
+          "correctAnswer": 7,
+          "hints": ["56 ÷ ? = 8", "? × 8 = 56", "7 × 8 = 56"]
+        },
+        {
+          "id": "div_chall_011",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 3,
+          "questionAl": "Cili numër mungon? ? ÷ 8 = 12",
+          "options": [96, 88, 104, 80],
+          "correctAnswer": 96,
+          "hints": ["? ÷ 8 = 12", "8 × 12 = ?", "8 × 12 = 96"]
+        },
+        {
+          "id": "div_chall_012",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 2,
+          "questionAl": "Gjej numrin tjetër: 64, 32, 16, 8, ?",
+          "options": [4, 6, 2, 5],
+          "correctAnswer": 4,
+          "hints": ["Çdo numër pjesëtohet me 2", "8 ÷ 2 = ?", "8 ÷ 2 = 4"]
+        },
+        {
+          "id": "div_chall_013",
+          "type": "challenge",
+          "subtype": "pattern",
+          "difficulty": 3,
+          "questionAl": "Gjej numrin tjetër: 243, 81, 27, 9, ?",
+          "options": [3, 6, 1, 4],
+          "correctAnswer": 3,
+          "hints": ["Çdo numër pjesëtohet me 3", "9 ÷ 3 = ?", "9 ÷ 3 = 3"]
+        },
+        {
+          "id": "div_chall_014",
+          "type": "challenge",
+          "subtype": "pyramid",
+          "difficulty": 2,
+          "questionAl": "PIRAMIDË: [72] sipër, [?] majtas, [8] djathtas. 72 ÷ 8 = ?",
+          "options": [9, 8, 7, 10],
+          "correctAnswer": 9,
+          "hints": ["72 ÷ 8 = ?", "Sa herë 8 hyn në 72?", "72 ÷ 8 = 9"]
+        },
+        {
+          "id": "div_chall_015",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "120 mollë ndahen baras në 8 shporta. Sa mollë ka çdo shportë?",
+          "options": [15, 14, 16, 12],
+          "correctAnswer": 15,
+          "hints": ["120 ÷ 8", "120 = 80 + 40", "80 ÷ 8 = 10, 40 ÷ 8 = 5"]
+        },
+        {
+          "id": "div_chall_016",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 3,
+          "questionAl": "Nëse (? × 6) ÷ 3 = 12, cili është numri?",
+          "options": [6, 5, 7, 4],
+          "correctAnswer": 6,
+          "hints": ["? × 6 ÷ 3 = 12", "? × 2 = 12", "? = 6"]
+        },
+        {
+          "id": "div_chall_017",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 2,
+          "questionAl": "Një autobus ka 45 ulëse. Nëse në çdo rresht ka 5 ulëse, sa rreshta ka autobusi?",
+          "options": [9, 8, 10, 7],
+          "correctAnswer": 9,
+          "hints": ["45 ÷ 5", "5 × 9 = 45", "= 9 rreshta"]
+        },
+        {
+          "id": "div_chall_018",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Noari ka 84 ngjitëse. I ndau baras në 7 fletore. Sa ngjitëse ka çdo fletore?",
+          "options": [12, 10, 14, 11],
+          "correctAnswer": 12,
+          "hints": ["84 ÷ 7", "7 × 12 = 84", "= 12 ngjitëse"]
+        },
+        {
+          "id": "div_chall_019",
+          "type": "challenge",
+          "subtype": "logic",
+          "difficulty": 2,
+          "questionAl": "Cili numër mungon? 81 ÷ ? = 9",
+          "options": [9, 8, 10, 7],
+          "correctAnswer": 9,
+          "hints": ["81 ÷ ? = 9", "? × 9 = 81", "9 × 9 = 81"]
+        },
+        {
+          "id": "div_chall_020",
+          "type": "challenge",
+          "subtype": "word_problem",
+          "difficulty": 3,
+          "questionAl": "Një restorant ka 144 pjata. Nëse çdo tavolinë merr 12 pjata, sa tavolina janë?",
+          "options": [12, 10, 14, 11],
+          "correctAnswer": 12,
+          "hints": ["144 ÷ 12", "12 × 12 = 144", "= 12 tavolina"]
+        }
+      ]
+    }
+  },
+  "magicSquares": [
+    {
+      "id": "magic_sq_01",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 15",
+      "config": {
+        "grid_size": 3,
+        "target_value": 15,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 8, "is_fixed": true },
+          { "index": 1, "value": 1, "is_fixed": false },
+          { "index": 2, "value": 6, "is_fixed": true },
+          { "index": 3, "value": 3, "is_fixed": false },
+          { "index": 4, "value": 5, "is_fixed": true },
+          { "index": 5, "value": 7, "is_fixed": false },
+          { "index": 6, "value": 4, "is_fixed": true },
+          { "index": 7, "value": 9, "is_fixed": false },
+          { "index": 8, "value": 2, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 15", "8 + ? + 6 = 15, pra ? = 1", "Fillo me qelizat e lehta"]
+    },
+    {
+      "id": "magic_sq_02",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 12",
+      "config": {
+        "grid_size": 3,
+        "target_value": 12,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 5, "is_fixed": true },
+          { "index": 1, "value": 2, "is_fixed": false },
+          { "index": 2, "value": 5, "is_fixed": true },
+          { "index": 3, "value": 4, "is_fixed": false },
+          { "index": 4, "value": 4, "is_fixed": true },
+          { "index": 5, "value": 4, "is_fixed": false },
+          { "index": 6, "value": 3, "is_fixed": true },
+          { "index": 7, "value": 6, "is_fixed": false },
+          { "index": 8, "value": 3, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 12", "5 + ? + 5 = 12, pra ? = 2", "Përdor zbritjen: 12 - 5 - 5 = 2"]
+    },
+    {
+      "id": "magic_sq_03",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 18",
+      "config": {
+        "grid_size": 3,
+        "target_value": 18,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 9, "is_fixed": true },
+          { "index": 1, "value": 2, "is_fixed": false },
+          { "index": 2, "value": 7, "is_fixed": true },
+          { "index": 3, "value": 4, "is_fixed": false },
+          { "index": 4, "value": 6, "is_fixed": true },
+          { "index": 5, "value": 8, "is_fixed": false },
+          { "index": 6, "value": 5, "is_fixed": true },
+          { "index": 7, "value": 10, "is_fixed": false },
+          { "index": 8, "value": 3, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 18", "9 + ? + 7 = 18", "18 - 9 - 7 = 2"]
+    },
+    {
+      "id": "magic_sq_04",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 21",
+      "config": {
+        "grid_size": 3,
+        "target_value": 21,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 10, "is_fixed": true },
+          { "index": 1, "value": 3, "is_fixed": false },
+          { "index": 2, "value": 8, "is_fixed": true },
+          { "index": 3, "value": 5, "is_fixed": false },
+          { "index": 4, "value": 7, "is_fixed": true },
+          { "index": 5, "value": 9, "is_fixed": false },
+          { "index": 6, "value": 6, "is_fixed": true },
+          { "index": 7, "value": 11, "is_fixed": false },
+          { "index": 8, "value": 4, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 21", "10 + ? + 8 = 21", "21 - 10 - 8 = 3"]
+    },
+    {
+      "id": "magic_sq_05",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 24",
+      "config": {
+        "grid_size": 3,
+        "target_value": 24,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 11, "is_fixed": true },
+          { "index": 1, "value": 4, "is_fixed": false },
+          { "index": 2, "value": 9, "is_fixed": true },
+          { "index": 3, "value": 6, "is_fixed": false },
+          { "index": 4, "value": 8, "is_fixed": true },
+          { "index": 5, "value": 10, "is_fixed": false },
+          { "index": 6, "value": 7, "is_fixed": true },
+          { "index": 7, "value": 12, "is_fixed": false },
+          { "index": 8, "value": 5, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 24", "11 + ? + 9 = 24", "24 - 11 - 9 = 4"]
+    },
+    {
+      "id": "magic_sq_06",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 9",
+      "config": {
+        "grid_size": 3,
+        "target_value": 9,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 4, "is_fixed": true },
+          { "index": 1, "value": 1, "is_fixed": false },
+          { "index": 2, "value": 4, "is_fixed": true },
+          { "index": 3, "value": 3, "is_fixed": false },
+          { "index": 4, "value": 3, "is_fixed": true },
+          { "index": 5, "value": 3, "is_fixed": false },
+          { "index": 6, "value": 2, "is_fixed": true },
+          { "index": 7, "value": 5, "is_fixed": false },
+          { "index": 8, "value": 2, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 9", "4 + ? + 4 = 9", "9 - 4 - 4 = 1"]
+    },
+    {
+      "id": "magic_sq_07",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 30",
+      "config": {
+        "grid_size": 3,
+        "target_value": 30,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 14, "is_fixed": true },
+          { "index": 1, "value": 4, "is_fixed": false },
+          { "index": 2, "value": 12, "is_fixed": true },
+          { "index": 3, "value": 6, "is_fixed": false },
+          { "index": 4, "value": 10, "is_fixed": true },
+          { "index": 5, "value": 14, "is_fixed": false },
+          { "index": 6, "value": 10, "is_fixed": true },
+          { "index": 7, "value": 16, "is_fixed": false },
+          { "index": 8, "value": 4, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 30", "14 + ? + 12 = 30", "30 - 14 - 12 = 4"]
+    },
+    {
+      "id": "magic_sq_08",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 27",
+      "config": {
+        "grid_size": 3,
+        "target_value": 27,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 12, "is_fixed": true },
+          { "index": 1, "value": 5, "is_fixed": false },
+          { "index": 2, "value": 10, "is_fixed": true },
+          { "index": 3, "value": 7, "is_fixed": false },
+          { "index": 4, "value": 9, "is_fixed": true },
+          { "index": 5, "value": 11, "is_fixed": false },
+          { "index": 6, "value": 8, "is_fixed": true },
+          { "index": 7, "value": 13, "is_fixed": false },
+          { "index": 8, "value": 6, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 27", "12 + ? + 10 = 27", "27 - 12 - 10 = 5"]
+    },
+    {
+      "id": "magic_sq_09",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 33",
+      "config": {
+        "grid_size": 3,
+        "target_value": 33,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 16, "is_fixed": true },
+          { "index": 1, "value": 3, "is_fixed": false },
+          { "index": 2, "value": 14, "is_fixed": true },
+          { "index": 3, "value": 6, "is_fixed": false },
+          { "index": 4, "value": 11, "is_fixed": true },
+          { "index": 5, "value": 16, "is_fixed": false },
+          { "index": 6, "value": 11, "is_fixed": true },
+          { "index": 7, "value": 19, "is_fixed": false },
+          { "index": 8, "value": 3, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 33", "16 + ? + 14 = 33", "33 - 16 - 14 = 3"]
+    },
+    {
+      "id": "magic_sq_10",
+      "type": "magic_square",
+      "questionAl": "Plotëso katrorin magjik që shuma e çdo rreshti dhe kolone të jetë 36",
+      "config": {
+        "grid_size": 3,
+        "target_value": 36,
+        "operation": "sum",
+        "cells": [
+          { "index": 0, "value": 15, "is_fixed": true },
+          { "index": 1, "value": 8, "is_fixed": false },
+          { "index": 2, "value": 13, "is_fixed": true },
+          { "index": 3, "value": 10, "is_fixed": false },
+          { "index": 4, "value": 12, "is_fixed": true },
+          { "index": 5, "value": 14, "is_fixed": false },
+          { "index": 6, "value": 11, "is_fixed": true },
+          { "index": 7, "value": 16, "is_fixed": false },
+          { "index": 8, "value": 9, "is_fixed": true }
+        ]
+      },
+      "hints": ["Shuma e çdo rreshti është 36", "15 + ? + 13 = 36", "36 - 15 - 13 = 8"]
+    }
+  ]
+}
