@@ -413,33 +413,78 @@ lessons.push({
     {
       type: 'intro',
       titleAl: 'Çfarë do të mësojmë?',
-      contentAl: 'Kemi mësuar tabelën e shumëzimit. Tani do të mësojmë si të shumëzojmë numra si 23 × 4 ose 15 × 12. Ky quhet shumëzimi me numra dyshifrorë dhe treshifrorë!',
+      contentAl: 'Kemi mësuar tabelën e shumëzimit (3×4=12). Tani do të mësojmë si të shumëzojmë numra më të mëdhenj si 23 × 4 ose 15 × 12. Truku është: **ndaji numrat në pjesë të vogla!**',
       mascotMessage: 'Tani bëhemi matematikanë të vërtetë! 🧮',
     },
     {
       type: 'example',
-      titleAl: 'Metoda e Ndarjes (Dyshifror × Njëshifror)',
+      titleAl: 'Hapi 1: Ndaj dhe Shumëzo',
       contentAl: `
         🔢 **Si shumëzojmë 23 × 4?**
 
-        **Hapi 1:** Ndaj 23 në dhjetësha dhe njësha
-        23 = 20 + 3
+        Imagjino: 23 = 20 + 3
 
-        **Hapi 2:** Shumëzo secilin veç e veç
-        20 × 4 = 80
-        3 × 4 = 12
+        🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 = 20
+        🟩🟩🟩 = 3
 
-        **Hapi 3:** Mblidh rezultatet
-        80 + 12 = **92**
+        Tani shumëzo secilin:
+        20 × 4 = **80** (4 grupe me 20)
+        3 × 4 = **12** (4 grupe me 3)
 
-        Pra, 23 × 4 = 92 ✓
+        Mblidhi: 80 + 12 = **92** ✓
+
+        ───────────────────────────
+
+        🔢 **Edhe 15 × 6?**
+
+        15 = 10 + 5
+        10 × 6 = **60**
+        5 × 6 = **30**
+        60 + 30 = **90** ✓
       `,
-      mascotMessage: 'Ndaj dhe shumëzo – truku i artë! ✨',
-      tipAl: 'Gjithmonë fillo nga njëshat, pastaj dhjetëshat!',
+      mascotMessage: 'Ndaj numrin në dhjetësha dhe njësha!',
+      tipAl: '23 × 4 = (20 × 4) + (3 × 4) = 80 + 12 = 92',
     },
     {
       type: 'example',
-      titleAl: 'Shumëzimi me Mbajtje (Kolonë)',
+      titleAl: 'Hapi 2: Më Shumë Shembuj',
+      contentAl: `
+        📝 **Le të ushtrojmë shumë shembuj:**
+
+        🔢 **14 × 3 = ?**
+        10 × 3 = 30
+        4 × 3 = 12
+        30 + 12 = **42** ✓
+
+        🔢 **32 × 5 = ?**
+        30 × 5 = 150
+        2 × 5 = 10
+        150 + 10 = **160** ✓
+
+        🔢 **45 × 2 = ?**
+        40 × 2 = 80
+        5 × 2 = 10
+        80 + 10 = **90** ✓
+
+        🔢 **21 × 7 = ?**
+        20 × 7 = 140
+        1 × 7 = 7
+        140 + 7 = **147** ✓
+      `,
+      mascotMessage: 'Sa më shumë ushtrime, aq më i mirë bëhesh!',
+      tipAl: 'Gjithmonë ndaj në dhjetësha + njësha!',
+    },
+    {
+      type: 'animation',
+      titleAl: 'Shiko shumëzimin!',
+      contentAl: 'Le të shohim 12 × 4 — 4 grupe me nga 12:',
+      animationType: 'multiplication',
+      animationNumbers: [12, 4],
+      mascotMessage: 'Shiko si grupohen!',
+    },
+    {
+      type: 'example',
+      titleAl: 'Hapi 3: Shumëzimi në Kolonë me Mbajtje',
       contentAl: `
         📝 **Si shkruajmë 34 × 5 në kolonë?**
 
@@ -447,68 +492,120 @@ lessons.push({
          ×  5
          ────
 
-        **Hapi 1:** 4 × 5 = 20 → Shkruaj 0, mbart 2
-        **Hapi 2:** 3 × 5 = 15, + 2 (mbartja) = 17
+        **Hapi 1:** Fillo nga njëshat: 4 × 5 = 20
+        → Shkruaj **0**, mbart **2** sipër
+
+        **Hapi 2:** Dhjetëshat: 3 × 5 = 15, + 2 = 17
+        → Shkruaj **17**
 
            34
          ×  5
          ────
-          170
+          170     Përgjigja: **170** ✓
 
-        Pra, 34 × 5 = 170 ✓
+        ─────────────────────────
+
+        📝 **Edhe 46 × 3:**
+
+           46
+         ×  3
+         ────
+
+        6 × 3 = 18 → shkruaj 8, mbart 1
+        4 × 3 = 12, + 1 = 13
+
+          138     Përgjigja: **138** ✓
       `,
-      mascotMessage: 'Mbartja është miku ynë i fshehtë! 🤫',
+      mascotMessage: 'Mbartja kalohet te shifra tjetër! 🤫',
       tipAl: 'Shkruaj gjithmonë mbartjen mbi shifrën tjetër!',
     },
     {
-      type: 'animation',
-      titleAl: 'Shiko shumëzimin!',
-      contentAl: 'Le të shohim 12 × 4:',
-      animationType: 'multiplication',
-      animationNumbers: [12, 4],
-      mascotMessage: 'Shiko si grupohen!',
-    },
-    {
       type: 'example',
-      titleAl: 'Dyshifror × Dyshifror',
+      titleAl: 'Hapi 4: Dyshifror × Dyshifror',
       contentAl: `
         🔢 **Si shumëzojmë 24 × 13?**
 
-        **Metoda e Ndarjes:**
-        24 × 13 = 24 × (10 + 3)
+        Ndaj 13 = 10 + 3
 
-        24 × 10 = 240
-        24 ×  3 =  72
+        24 × 10 = **240**
+        24 × 3 = **72**
         ──────────────
-        Gjithsej  = 312
+        240 + 72 = **312** ✓
 
-        Pra, 24 × 13 = **312** ✓
+        ─────────────────────────
+
+        🔢 **Edhe 15 × 12?**
+
+        Ndaj 12 = 10 + 2
+
+        15 × 10 = **150**
+        15 × 2 = **30**
+        ──────────────
+        150 + 30 = **180** ✓
+
+        ─────────────────────────
+
+        🔢 **Edhe 25 × 16?**
+
+        25 × 10 = **250**
+        25 × 6 = **150**
+        250 + 150 = **400** ✓
       `,
-      mascotMessage: 'Ndaj numrin e dytë gjithashtu!',
-      tipAl: '24 × 13 = (24 × 10) + (24 × 3) = 240 + 72 = 312',
+      mascotMessage: 'Ndaj numrin e dytë në dhjetësha dhe njësha!',
+      tipAl: 'a × (b+c) = a×b + a×c',
     },
     {
       type: 'example',
-      titleAl: 'Treshifror × Njëshifror',
+      titleAl: 'Hapi 5: Treshifror × Njëshifror',
       contentAl: `
         🔢 **Si shumëzojmë 234 × 3?**
 
-        **Ndaj 234:**
-        200 × 3 = 600
-         30 × 3 =  90
-          4 × 3 =  12
+        Ndaj 234 = 200 + 30 + 4
+
+        200 × 3 = **600**
+         30 × 3 = **90**
+          4 × 3 = **12**
         ─────────────
-        Gjithsej = 702
+        600 + 90 + 12 = **702** ✓
 
-        Pra, 234 × 3 = **702** ✓
+        ─────────────────────────
 
-        🔢 **Edhe 125 × 4:**
+        🔢 **Edhe 125 × 4?**
         100 × 4 = 400
          25 × 4 = 100
-        400 + 100 = **500**
+        400 + 100 = **500** ✓
+
+        🔢 **Edhe 312 × 3?**
+        300 × 3 = 900
+         12 × 3 = 36
+        900 + 36 = **936** ✓
       `,
       mascotMessage: 'Ndaj numrat e mëdhenj – bëhet shumë e lehtë!',
       tipAl: 'Kontrollo me mbledhje: 702 = 600 + 90 + 12 ✓',
+    },
+    {
+      type: 'example',
+      titleAl: 'Probleme me Fjalë',
+      contentAl: `
+        📚 **Shembull 1:**
+        Noari ka 24 kuti. Çdo kuti ka 5 lapsa.
+        Sa lapsa ka gjithsej?
+
+        24 × 5 = (20×5) + (4×5) = 100 + 20 = **120 lapsa** ✓
+
+        📚 **Shembull 2:**
+        Një klasë ka 28 nxënës. Çdo nxënës ka 4 libra.
+        Sa libra ka gjithsej klasa?
+
+        28 × 4 = (20×4) + (8×4) = 80 + 32 = **112 libra** ✓
+
+        📚 **Shembull 3:**
+        Në kopsht ka 15 rreshta pemësh. Çdo rresht ka 12 pemë.
+        Sa pemë ka gjithsej?
+
+        15 × 12 = (15×10) + (15×2) = 150 + 30 = **180 pemë** ✓
+      `,
+      mascotMessage: 'Problemet me fjalë janë kudo rreth nesh!',
     },
     {
       type: 'summary',
@@ -519,6 +616,7 @@ lessons.push({
         ✅ Mblidh rezultatet: 80 + 12 = 92
         ✅ Mëso të shumëzosh në kolonë me mbajtje
         ✅ Dyshifror × Dyshifror: ndaj numrin e dytë gjithashtu
+        ✅ Treshifror × Njëshifror: ndaj në qindësha + dhjetësha + njësha
       `,
       mascotMessage: 'Tani je shumëzues i vërtetë! 💪🏆',
     },
@@ -534,46 +632,65 @@ lessons.push({
     {
       type: 'intro',
       titleAl: 'Çfarë do të mësojmë?',
-      contentAl: 'Kemi mësuar pjesëtimin e thjeshtë (12 ÷ 3). Tani do të mësojmë si të pjesëtojmë numra si 84 ÷ 4 ose 246 ÷ 3. Quhet "pjesëtimi i gjatë" ose "pjesëtimi me numra dyshifrorë"!',
+      contentAl: 'Kemi mësuar pjesëtimin e thjeshtë (12 ÷ 3 = 4). Tani do të mësojmë si të pjesëtojmë numra më të mëdhenj si 84 ÷ 4 ose 246 ÷ 3. Truku është i njëjtë: **ndaji numrat në pjesë të vogla!**',
       mascotMessage: 'Pjesëtimi i gjatë bëhet i lehtë me hapat e duhur! 📐',
     },
     {
       type: 'example',
-      titleAl: 'Metoda e Ndarjes (Dyshifror ÷ Njëshifror)',
+      titleAl: 'Hapi 1: Ndaj dhe Pjesëto',
       contentAl: `
         🔢 **Si pjesëtojmë 84 ÷ 4?**
 
-        **Metoda e Ndarjes:**
+        Ndaj 84 në pjesë që mund t'i pjesëtosh lehtë:
         84 = 80 + 4
 
-        80 ÷ 4 = 20
-         4 ÷ 4 =  1
+        80 ÷ 4 = **20** (sa katërsha ka 80?)
+         4 ÷ 4 = **1**
         ──────────────
-        Gjithsej = **21**
+        20 + 1 = **21**
 
-        Kontrollo: 21 × 4 = 84 ✓
+        Kontrollo: 21 × 4 = 84 ✓ Saktë!
+
+        ─────────────────────────
+
+        🔢 **Edhe 63 ÷ 3?**
+
+        63 = 60 + 3
+        60 ÷ 3 = **20**
+         3 ÷ 3 = **1**
+        20 + 1 = **21** ✓
       `,
       mascotMessage: 'Ndaj dhe pjesëto – si me shumëzimin!',
       tipAl: 'Gjithmonë kontrollo duke shumëzuar mbrapsht!',
     },
     {
       type: 'example',
-      titleAl: 'Pjesëtimi i Gjatë (Kolona)',
+      titleAl: 'Hapi 2: Më Shumë Shembuj',
       contentAl: `
-        📝 **Si bëjmë 96 ÷ 3 me kolonë?**
+        📝 **Le të ushtrojmë shumë shembuj:**
 
-        **Hapi 1:** Si herë shkon 3 brenda 9? → 3 herë
-        **Hapi 2:** 3 × 3 = 9 → Mbetja: 9 - 9 = 0
-        **Hapi 3:** Zbrit shifrën tjetër: 6
-        **Hapi 4:** Si herë shkon 3 brenda 6? → 2 herë
-        **Hapi 5:** 3 × 2 = 6 → Mbetja: 0
+        🔢 **48 ÷ 4 = ?**
+        40 ÷ 4 = 10
+         8 ÷ 4 = 2
+        10 + 2 = **12** ✓
 
-        Rezultati: **32**
+        🔢 **96 ÷ 3 = ?**
+        90 ÷ 3 = 30
+         6 ÷ 3 = 2
+        30 + 2 = **32** ✓
 
-        Kontrollo: 32 × 3 = 96 ✓
+        🔢 **72 ÷ 6 = ?**
+        60 ÷ 6 = 10
+        12 ÷ 6 = 2
+        10 + 2 = **12** ✓
+
+        🔢 **55 ÷ 5 = ?**
+        50 ÷ 5 = 10
+         5 ÷ 5 = 1
+        10 + 1 = **11** ✓
       `,
-      mascotMessage: 'Hap pas hapi – kjo është metoda!',
-      tipAl: 'Pjesëtimi i gjatë: ndaj, shumëzo, zbrit, zbrit shifrën tjetër!',
+      mascotMessage: 'Sa më shumë ushtrime, aq më shpejt bëhesh!',
+      tipAl: 'Gjej numrin më të afërt që pjesëtohet saktë!',
     },
     {
       type: 'animation',
@@ -585,25 +702,60 @@ lessons.push({
     },
     {
       type: 'example',
-      titleAl: 'Treshifror ÷ Njëshifror',
+      titleAl: 'Hapi 3: Pjesëtimi i Gjatë (Kolona)',
+      contentAl: `
+        📝 **Si bëjmë 96 ÷ 3 me kolonë?**
+
+        **Hapi 1:** Shiko shifrën e parë: 9
+        Si herë shkon 3 brenda 9? → **3** herë
+        Shkruaj 3 sipër. Mbetja: 9 - 9 = 0
+
+        **Hapi 2:** Zbrit shifrën tjetër: 6
+        Si herë shkon 3 brenda 6? → **2** herë
+        Shkruaj 2 sipër. Mbetja: 6 - 6 = 0
+
+        Rezultati: **32** ✓
+
+        ─────────────────────────
+
+        📝 **Edhe 84 ÷ 4:**
+
+        8 ÷ 4 = **2** → zbrit 4 = 0
+        Zbrit shifrën 4
+        4 ÷ 4 = **1** → mbetja 0
+
+        Rezultati: **21** ✓
+      `,
+      mascotMessage: 'Hap pas hapi – kjo është metoda!',
+      tipAl: 'Ndaj, shumëzo, zbrit, zbrit shifrën tjetër, përsërit!',
+    },
+    {
+      type: 'example',
+      titleAl: 'Hapi 4: Treshifror ÷ Njëshifror',
       contentAl: `
         🔢 **Si pjesëtojmë 246 ÷ 3?**
 
-        **Metoda e Ndarjes:**
         240 ÷ 3 = 80
-          6 ÷ 3 =  2
-        ──────────────
-        Gjithsej = **82**
+          6 ÷ 3 = 2
+        80 + 2 = **82** ✓
 
-        Kontrollo: 82 × 3 = 246 ✓
-
-        🔢 **Edhe 125 ÷ 5:**
+        🔢 **Edhe 125 ÷ 5?**
         100 ÷ 5 = 20
-         25 ÷ 5 =  5
-        20 + 5 = **25**
+         25 ÷ 5 = 5
+        20 + 5 = **25** ✓
+
+        🔢 **Edhe 336 ÷ 4?**
+        320 ÷ 4 = 80
+         16 ÷ 4 = 4
+        80 + 4 = **84** ✓
+
+        🔢 **Edhe 420 ÷ 7?**
+        420 = 42 × 10
+        42 ÷ 7 = 6
+        6 × 10 = **60** ✓
       `,
       mascotMessage: 'Ndaj numrin e madh dhe bëhet i lehtë!',
-      tipAl: '246 ÷ 3: Shiko 240 (shumëfish i 3) + 6 (shumëfish i 3)',
+      tipAl: 'Gjej shumëfishin më të afërt të pjesëtuesit!',
     },
     {
       type: 'example',
@@ -613,16 +765,25 @@ lessons.push({
         168 libra ndahen në 7 raft të barabarta.
         Sa libra ka çdo raft?
 
-        168 ÷ 7 = ?
         140 ÷ 7 = 20
-         28 ÷ 7 =  4
-        20 + 4 = **24 libra** secili raft ✓
+         28 ÷ 7 = 4
+        20 + 4 = **24 libra** për çdo raft ✓
 
         📚 **Shembull 2:**
+        96 bonbone ndahen midis 8 fëmijëve.
+        Sa bonbone merr secili?
+
+        80 ÷ 8 = 10
+        16 ÷ 8 = 2
+        10 + 2 = **12 bonbone** secili ✓
+
+        📚 **Shembull 3:**
         252 vezë vendosen në kuti me 12 veze.
         Sa kuti nevojiten?
 
-        252 ÷ 12 = 21 kuti ✓
+        240 ÷ 12 = 20
+         12 ÷ 12 = 1
+        20 + 1 = **21 kuti** ✓
       `,
       mascotMessage: 'Problemet me fjalë bëhen të lehta me pjesëtim!',
     },
@@ -635,6 +796,7 @@ lessons.push({
         ✅ Mblidh rezultatet: 20 + 1 = 21
         ✅ Kontrollo gjithmonë me shumëzim!
         ✅ Pjesëtimi i gjatë: ndaj, shumëzo, zbrit, zbrit shifrën
+        ✅ Treshifror ÷ njëshifror: ndaj në qindësha + dhjetësha
       `,
       mascotMessage: 'Tani je ekspert i pjesëtimit! 🌟🏆',
     },
@@ -650,122 +812,331 @@ lessons.push({
     {
       type: 'intro',
       titleAl: 'Çfarë janë Thyesat?',
-      contentAl: 'Kur e ndajmë diçka në pjesë të barabarta, çdo pjesë quhet thyesë. Nëse e ndajmë picën në 4 feta dhe marrim 1 fetë, marrim 1/4 (një të katërtën) e picës!',
+      contentAl: `Imagjino një picë. E pret në 4 copa të barabarta.
+
+Merr 1 copë. Ti more **1 copë nga 4** gjithsej.
+
+Kjo shkruhet: **1/4** (lexohet: "një e katërta")
+
+Thyesat janë kudo rreth nesh:
+• Gjysma e mollës = **1/2**
+• Çereku i tortës = **1/4**
+• Tre feta nga tetë = **3/8**`,
       mascotMessage: 'Thyesat janë kudo rreth nesh – në pica, cokollatë, e kudo! 🍕',
     },
     {
       type: 'example',
-      titleAl: 'Pjesët e Thyesës',
+      titleAl: 'Pjesët e Thyesës: Numëruesi dhe Emëruesi',
       contentAl: `
-        🍕 **Thyesa ka dy pjesë:**
+        🍕 **Thyesa ka DY pjesë:**
 
-              3   ← Numëruesi (sa pjesë marrim)
+              3   ← **NUMËRUESI** (sa pjesë MARRIM)
              ───
-              8   ← Emëruesi (sa pjesë ka gjithsej)
+              8   ← **EMËRUESI** (sa pjesë KA GJITHSEJ)
 
-        **Shembuj:**
-        🍕 Pica me 8 feta – marr 3 feta = **3/8** (tre të tetat)
-        🟦 Katror me 4 pjesë – ngjyros 1 = **1/4** (një e katërta)
-        🔵 Rreth me 2 pjesë – merr 1 = **1/2** (gjysma)
+        **Mendo kështu:**
+        Emëruesi = në SA copa e prisni? (emëruesi EMËRON — i jep emër thyesës)
+        Numëruesi = SA copa merrni? (numëruesi NUMËRON — numëron copat)
 
-        Numëruesi = sa marrim
-        Emëruesi = sa ka gjithsej
+        **Shembuj me vizatime:**
+
+        🍕 Pica me 8 feta → marr 3 feta → **3/8**
+           Emëruesi = 8 (ka 8 feta gjithsej)
+           Numëruesi = 3 (marr 3 feta)
+
+        🟦 Katror me 4 pjesë → ngjyros 1 → **1/4**
+           Emëruesi = 4 (ka 4 pjesë gjithsej)
+           Numëruesi = 1 (ngjyrosa 1 pjesë)
+
+        🟩 Shirit me 6 pjesë → ngjyros 2 → **2/6**
       `,
-      mascotMessage: 'Numëruesi është sipër, emëruesi është poshtë!',
-      tipAl: 'Emëruesi tregon sa copëza ka e tëra gjithsej!',
+      mascotMessage: 'Numëruesi sipër, emëruesi poshtë! Kaq e thjeshtë!',
+      tipAl: 'Emëruesi = GJITHSEJ, Numëruesi = SA MARR',
     },
     {
       type: 'example',
       titleAl: 'Thyesat me Pica 🍕',
       contentAl: `
-        🍕 **Pica e Noarit:**
-        Pica është prerë në **8 feta** të barabarta.
+        🍕 **Pica e Noarit (prerë në 8 feta):**
 
-        • Marr **1 fetë** → Thyesa: **1/8**
-        • Marr **3 feta** → Thyesa: **3/8**
-        • Marr **5 feta** → Thyesa: **5/8**
-        • Marr **8 feta** → Thyesa: **8/8 = 1** (e tëra!)
+        🍕 Marr 1 fetë → **1/8** = "një e teta"
+        🍕🍕 Marr 2 feta → **2/8** = "dy të tetat"
+        🍕🍕🍕 Marr 3 feta → **3/8** = "tre të tetat"
+        🍕🍕🍕🍕 Marr 4 feta → **4/8** = "katër të tetat" (gjysma!)
+        🍕🍕🍕🍕🍕🍕🍕🍕 Marr 8 feta → **8/8 = 1** (e tëra pica!)
 
-        Numëruesi rritet sa herë marrim më shumë feta!
-        Emëruesi mbetet **8** gjithmonë (ka 8 feta gjithsej).
+        ─────────────────────────
+
+        🍕 **Pica tjetër (prerë në 4 feta):**
+
+        🍕 Marr 1 fetë → **1/4** = "një e katërta" (çereku)
+        🍕🍕 Marr 2 feta → **2/4** = "dy të katërtat" (gjysma!)
+        🍕🍕🍕 Marr 3 feta → **3/4** = "tre të katërtat"
+        🍕🍕🍕🍕 Marr 4 feta → **4/4 = 1** (e tëra!)
       `,
-      mascotMessage: 'Sa feta marr sot? Gjithmonë numëro thyesën! 😄',
+      mascotMessage: 'Sa feta marr, aq më e madhe bëhet thyesa!',
       tipAl: 'Kur numëruesi = emëruesi, thyesa = 1 (e tëra)',
     },
     {
       type: 'example',
       titleAl: 'Thyesat me Katrorë dhe Rrethe',
       contentAl: `
-        🟦 **Katrori:**
-        Ndajmë katrorin në 4 pjesë.
-        Ngjyrosim 3 → thyesa = **3/4**
+        🟦 **Katrori (4 pjesë):**
+        ┌──┬──┐
+        │🔵│  │   → Ngjyrosa 1 nga 4 = **1/4**
+        ├──┼──┤
+        │  │  │
+        └──┴──┘
 
-        🔵 **Rrethi:**
-        Ndajmë rreth in 6 pjesë.
-        Ngjyrosim 4 → thyesa = **4/6**
+        ┌──┬──┐
+        │🔵│🔵│   → Ngjyrosa 3 nga 4 = **3/4**
+        ├──┼──┤
+        │🔵│  │
+        └──┴──┘
 
-        🟩 **Drejtkëndëshi:**
-        Ndajmë drejtkëndëshin në 5 pjesë.
-        Ngjyrosim 2 → thyesa = **2/5**
+        🟩 **Drejtkëndëshi (6 pjesë):**
+        [🟩][🟩][🟩][ ][ ][ ] → 3 nga 6 = **3/6** (= 1/2!)
 
-        **Si lexojmë thyesat:**
-        1/2 = "një gjysmë" (gjysma)
+        🔵 **Rrethi (3 pjesë):**
+        Imagjino picën prerë në 3 → marr 2 → **2/3**
+
+        **Si i lexojmë thyesat?**
+        1/2 = "një gjysmë"
+        1/3 = "një e treta"
         1/4 = "një e katërta" (çereku)
-        3/8 = "tre të tetat"
         2/3 = "dy të tretat"
+        3/8 = "tre të tetat"
       `,
       mascotMessage: 'Shiko figurat dhe numëro pjesët e ngjyrosura!',
     },
     {
       type: 'example',
-      titleAl: 'Thyesat e Numrave',
+      titleAl: 'Thyesat e Numrave të Vegjël',
       contentAl: `
-        🔢 **Thyesa e numrave:**
+        🔢 **Gjej thyesën e një numri:**
 
-        **1/2 e numrit 10:**
-        10 ÷ 2 = **5**  (gjysma e 10 është 5)
+        Rregulli: **Pjesëto numrin me emëruesin!**
 
-        **1/4 e numrit 12:**
-        12 ÷ 4 = **3**  (çereku i 12 është 3)
+        ─────────────────────────
 
-        **3/4 e numrit 8:**
-        8 ÷ 4 = 2 (gjej 1/4 së pari)
-        2 × 3 = **6** (shumëzo me numëruesin)
+        **1/2 e numrit 10?**
+        10 ÷ 2 = **5** ✓
+        (gjysma e 10 është 5)
 
-        **Rregulli:** Pjesëto me emëruesin, shumëzo me numëruesin!
+        **1/2 e numrit 6?**
+        6 ÷ 2 = **3** ✓
+
+        **1/3 e numrit 9?**
+        9 ÷ 3 = **3** ✓
+
+        **1/4 e numrit 8?**
+        8 ÷ 4 = **2** ✓
+
+        **1/5 e numrit 15?**
+        15 ÷ 5 = **3** ✓
+
+        **1/4 e numrit 20?**
+        20 ÷ 4 = **5** ✓
+
+        Mendoje kështu: 1/4 e 8 = "ndaje 8 në 4 grupe, merr 1 grup"
+        8 ÷ 4 = 2 → merr **2**
       `,
-      mascotMessage: 'Gjej 1/4 dhe shumëzo për të gjetur 3/4! 🧠',
+      mascotMessage: 'Pjesëto me emëruesin — kaq thjeshtë!',
+      tipAl: '1/b e numrit n = n ÷ b',
+    },
+    {
+      type: 'example',
+      titleAl: 'Thyesat e Numrave të Mëdhenj',
+      contentAl: `
+        🔢 **Thyesat e numrave të mëdhenj:**
+
+        **1/4 e numrit 100?**
+        100 ÷ 4 = **25** ✓
+        (çereku i 100 është 25)
+
+        **1/2 e numrit 100?**
+        100 ÷ 2 = **50** ✓
+
+        **1/5 e numrit 100?**
+        100 ÷ 5 = **20** ✓
+
+        **1/10 e numrit 100?**
+        100 ÷ 10 = **10** ✓
+
+        **1/4 e numrit 40?**
+        40 ÷ 4 = **10** ✓
+
+        **1/3 e numrit 30?**
+        30 ÷ 3 = **10** ✓
+
+        **1/2 e numrit 200?**
+        200 ÷ 2 = **100** ✓
+
+        Rregulli: Gjithmonë PJESËTO me emëruesin!
+      `,
+      mascotMessage: 'Edhe numrat e mëdhenj bëhen të lehtë! 💪',
+      tipAl: '1/4 e 100 = 100 ÷ 4 = 25',
+    },
+    {
+      type: 'example',
+      titleAl: 'Kur Numëruesi është Më i Madh se 1',
+      contentAl: `
+        🔢 **Rregulli i Artë:**
+        Thyesa e numrit = (Numri ÷ Emëruesi) × Numëruesi
+
+        **Dy hapa:**
+        1️⃣ Gjej 1 pjesë → pjesëto me emëruesin
+        2️⃣ Merr sa të duash → shumëzo me numëruesin
+
+        ─────────────────────────
+
+        **3/4 e numrit 8?**
+        Hapi 1: 8 ÷ 4 = 2 (1/4 e 8 = 2)
+        Hapi 2: 2 × 3 = **6** (3/4 e 8 = 6) ✓
+
+        **2/3 e numrit 12?**
+        Hapi 1: 12 ÷ 3 = 4 (1/3 e 12 = 4)
+        Hapi 2: 4 × 2 = **8** (2/3 e 12 = 8) ✓
+
+        **3/4 e numrit 100?**
+        Hapi 1: 100 ÷ 4 = 25 (1/4 e 100 = 25)
+        Hapi 2: 25 × 3 = **75** (3/4 e 100 = 75) ✓
+
+        **2/5 e numrit 100?**
+        Hapi 1: 100 ÷ 5 = 20 (1/5 e 100 = 20)
+        Hapi 2: 20 × 2 = **40** (2/5 e 100 = 40) ✓
+      `,
+      mascotMessage: 'Dy hapa: Pjesëto pa shumëzo!',
       tipAl: 'a/b e numrit n = (n ÷ b) × a',
+    },
+    {
+      type: 'example',
+      titleAl: 'Më Shumë Ushtrime me Thyesat e Numrave',
+      contentAl: `
+        📝 **Le të ushtrojmë shumë shembuj:**
+
+        **3/9 e numrit 9?**
+        9 ÷ 9 = 1 (1/9 e 9)
+        1 × 3 = **3** ✓
+        (ose thjesht: 3/9 = 1/3, dhe 1/3 e 9 = 3!)
+
+        **3/9 e numrit 3?**
+        3 ÷ 9... nuk ndahet! Por mendoje kështu:
+        3/9 = 1/3 (thyesë e barabartë)
+        1/3 e 3 = 3 ÷ 3 = **1** ✓
+
+        **5/8 e numrit 16?**
+        16 ÷ 8 = 2
+        2 × 5 = **10** ✓
+
+        **2/4 e numrit 100?**
+        100 ÷ 4 = 25
+        25 × 2 = **50** ✓
+        (2/4 = 1/2, dhe gjysma e 100 = 50!)
+
+        **7/8 e numrit 24?**
+        24 ÷ 8 = 3
+        3 × 7 = **21** ✓
+
+        **4/5 e numrit 10?**
+        10 ÷ 5 = 2
+        2 × 4 = **8** ✓
+      `,
+      mascotMessage: 'Praktika bën mjeshtrin! 📚',
+      tipAl: '3/9 = 1/3 janë thyesa të barabarta!',
+    },
+    {
+      type: 'example',
+      titleAl: 'Thyesat e Barabarta',
+      contentAl: `
+        🟰 **Thyesa të ndryshme, vlerë e njëjtë:**
+
+        Imagjino: Pret picën në 2 copa, marr 1 = **1/2**
+        Pret picën në 4 copa, marr 2 = **2/4**
+        Pret picën në 8 copa, marr 4 = **4/8**
+
+        E njëjta sasi pice! Pra:
+        **1/2 = 2/4 = 4/8** (gjithmonë gjysma!)
+
+        ─────────────────────────
+
+        **Më shumë thyesa të barabarta:**
+        1/3 = 2/6 = 3/9  (gjithmonë një e treta)
+        1/4 = 2/8 = 3/12 (gjithmonë çereku)
+        2/3 = 4/6 = 6/9
+
+        **Si e dimë?**
+        Shumëzo sipër DHE poshtë me të njëjtin numër:
+        1/3 → shumëzo me 3 → 3/9 ✓
+        2/4 → thjesht me 2 → 1/2 ✓
+      `,
+      mascotMessage: 'Thyesat e barabarta janë si emra të ndryshëm për të njëjtën gjë! 🟰',
+      tipAl: '1/3 = 2/6 = 3/9 — gjithmonë e njëjta thyesë!',
     },
     {
       type: 'example',
       titleAl: 'Krahasimi i Thyesave',
       contentAl: `
-        ⚖️ **Cila thyesë është më e madhe?**
+        ⚖️ **Cila thyesë është MË E MADHE?**
 
-        **1/2 apo 1/4?**
-        → 1/2 > 1/4 (gjysma > çereku)
-        Kur emëruesi është MÊ I VOGËL, thyesa është MÊ E MADHE!
+        **Rregull 1: Emëruesi i njëjtë**
+        3/8 apo 5/8? → **5/8 > 3/8**
+        (numëruesi më i madh = thyesë më e madhe)
 
-        **3/8 apo 5/8?**
-        → 5/8 > 3/8 (emëruesi njëjtë, numëruesi më i madh)
-        Kur emëruesi është I NJËJTË, numëruesi i madh → thyesa e madhe!
+        **Rregull 2: Numëruesi i njëjtë**
+        1/2 apo 1/4? → **1/2 > 1/4**
+        (emëruesi më i VOGËL = thyesë më e MADHE!)
 
-        **Thyesat e barabarta:**
-        1/2 = 2/4 = 4/8 (njëlloj – gjysma e secilës)
+        🤔 **Pse?** Imagjino:
+        Picën e pret në 2 copa → çdo copë MADHE
+        Picën e pret në 4 copa → çdo copë VOGËL
+
+        **Rregull 3: Krahasohet me 1/2**
+        3/4 > 1/2 (sepse 3/4 > 2/4)
+        2/8 < 1/2 (sepse 2/8 < 4/8)
       `,
-      mascotMessage: 'Krahasimi i thyesave bëhet i lehtë kur e kupton! ⚖️',
-      tipAl: '1/2 = 2/4 = 3/6 = 4/8 – gjithmonë gjysma!',
+      mascotMessage: 'Kur copat janë më pak, secila copë është më e madhe! ⚖️',
+      tipAl: '1/2 > 1/4 > 1/8 → sa më i madh emëruesi, aq më e vogël thyesa',
+    },
+    {
+      type: 'example',
+      titleAl: 'Probleme me Fjalë me Thyesat',
+      contentAl: `
+        📚 **Shembull 1:**
+        Noari ka 12 lapsa. Dha 1/4 e tyre. Sa dha?
+        12 ÷ 4 = **3 lapsa** ✓
+
+        📚 **Shembull 2:**
+        Klasa ka 20 nxënës. 3/4 erdhën sot. Sa erdhën?
+        20 ÷ 4 = 5 → 5 × 3 = **15 nxënës** ✓
+
+        📚 **Shembull 3:**
+        Torta ka 8 copa. Noari hëngri 3. Çfarë thyese hëngri?
+        Hëngri 3 nga 8 → **3/8** ✓
+
+        📚 **Shembull 4:**
+        Çanta ka 100 fletë. Noari përdori 1/4. Sa përdori?
+        100 ÷ 4 = **25 fletë** ✓
+
+        📚 **Shembull 5:**
+        Banka ka 9 mollë. Nëna marri 3/9. Sa marri?
+        9 ÷ 9 = 1 → 1 × 3 = **3 mollë** ✓
+        (ose: 3/9 = 1/3, dhe 1/3 e 9 = 3!)
+      `,
+      mascotMessage: 'Thyesat janë kudo në jetën tonë!',
     },
     {
       type: 'summary',
       titleAl: 'Çfarë mësuam',
       contentAl: `
         ✅ Thyesa = numëruesi / emëruesi
-        ✅ Numëruesi = sa pjesë marrim
-        ✅ Emëruesi = sa pjesë ka gjithsej
+        ✅ Numëruesi = sa pjesë MARRIM
+        ✅ Emëruesi = sa pjesë KA GJITHSEJ
         ✅ 1/2 = gjysma, 1/4 = çereku
-        ✅ Thyesa e numrit: pjesëto me emëruesin, shumëzo me numëruesin
+        ✅ 1/b e numrit n = n ÷ b (thjesht PJESËTO!)
+        ✅ a/b e numrit n = (n ÷ b) × a (pjesëto pa shumëzo)
+        ✅ 1/4 e 100 = 25, 3/4 e 100 = 75
+        ✅ 3/9 = 1/3 (thyesa të barabarta)
         ✅ Praktikou me pica dhe figura!
       `,
       mascotMessage: 'Tani je ekspert i thyesave! Provo drag-and-drop! 🍕🏆',
