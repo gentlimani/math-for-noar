@@ -248,6 +248,9 @@ export default function HomePage() {
                 zbritja: 'from-pink-400 to-rose-500',
                 shumezimi: 'from-blue-400 to-indigo-500',
                 pjestimi: 'from-purple-400 to-violet-500',
+                shumezimi_dyshifror: 'from-cyan-400 to-blue-500',
+                pjestimi_dyshifror: 'from-teal-400 to-cyan-500',
+                thyesat: 'from-orange-400 to-amber-500',
               }
               
               return (
