@@ -15,9 +15,11 @@ import {
 import { getQuestionsForTopic, getTopicById, Question } from '@/data/questions'
 import { getDragQuestionsForTopic, DragQuestion } from '@/data/dragQuestions'
 import { getTriangleQuestionsForTopic, TriangleQuestion } from '@/data/triangleQuestions'
+import { getFractionQuestionsForTopic, FractionVisualQuestion } from '@/data/fractionQuestions'
 import SideScratchPad from '@/components/SideScratchPad'
 import DragFillQuestion from '@/components/DragFillQuestion'
 import TriangleProblem from '@/components/TriangleProblem'
+import FractionDragDrop from '@/components/FractionDragDrop'
 import Mascot, { MascotReaction } from '@/components/Mascot'
 import { 
   ArrowLeft, 
@@ -35,10 +37,11 @@ import {
 const QUESTIONS_PER_QUIZ = 10
 
 // Combined question type
-type QuizQuestion = 
+type QuizQuestion =
   | (Question & { questionType: 'regular' })
   | (DragQuestion & { questionType: 'drag' })
   | (TriangleQuestion & { questionType: 'triangle' })
+  | (FractionVisualQuestion & { questionType: 'fraction' })
 
 export default function QuizPage() {
   const params = useParams()
@@ -71,25 +74,37 @@ export default function QuizPage() {
       return
     }
     
+    // Fraction topic: mix MCQ + visual fraction drag questions
+    if (topicId === 'thyesat') {
+      const regularQuestions = getQuestionsForTopic(topicId, 5)
+        .map(q => ({ ...q, questionType: 'regular' as const }))
+      const fractionQs = getFractionQuestionsForTopic(topicId, 5)
+        .map(q => ({ ...q, questionType: 'fraction' as const }))
+      const allQuestions = [...regularQuestions, ...fractionQs]
+        .sort(() => Math.random() - 0.5)
+      setQuestions(allQuestions)
+      return
+    }
+
     // Get regular questions (reduced count to make room for triangles)
     const regularQuestions = getQuestionsForTopic(topicId, QUESTIONS_PER_QUIZ - 4)
       .map(q => ({ ...q, questionType: 'regular' as const }))
-    
+
     // Get drag questions for variety
     const dragQs = getDragQuestionsForTopic(topicId)
     const selectedDragQuestions = dragQs
       .sort(() => Math.random() - 0.5)
       .slice(0, 2)
       .map(q => ({ ...q, questionType: 'drag' as const }))
-    
+
     // Get triangle questions (2 per quiz)
     const triangleQs = getTriangleQuestionsForTopic(topicId, 2)
       .map(q => ({ ...q, questionType: 'triangle' as const }))
-    
+
     // Mix them together
     const allQuestions = [...regularQuestions, ...selectedDragQuestions, ...triangleQs]
       .sort(() => Math.random() - 0.5)
-    
+
     setQuestions(allQuestions)
   }, [topicId, router])
 
@@ -221,6 +236,7 @@ export default function QuizPage() {
 
   const isDragQuestion = currentQuestion.questionType === 'drag'
   const isTriangleQuestion = currentQuestion.questionType === 'triangle'
+  const isFractionQuestion = currentQuestion.questionType === 'fraction'
 
   return (
     <div className="min-h-screen bg-fun-gradient">
@@ -264,6 +280,11 @@ export default function QuizPage() {
                   <Triangle className="w-3 h-3" /> Trekëndësh
                 </span>
               )}
+              {isFractionQuestion && (
+                <span className="px-2 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full flex items-center gap-1">
+                  🍕 Thyesa
+                </span>
+              )}
             </div>
 
             <div className="flex items-center gap-4">
@@ -301,8 +322,23 @@ export default function QuizPage() {
         <div className="quiz-layout">
           {/* Question section */}
           <div className="quiz-content space-y-4">
-            {/* Triangle Question */}
-            {isTriangleQuestion ? (
+            {/* Fraction Visual Question */}
+            {isFractionQuestion ? (
+              <div className={`card-fun transition-all duration-300 ${
+                showResult ? (isCorrect ? 'animate-celebrate' : 'animate-shake') : ''
+              }`}>
+                <FractionDragDrop
+                  shape={(currentQuestion as FractionVisualQuestion).shape}
+                  numerator={(currentQuestion as FractionVisualQuestion).numerator}
+                  denominator={(currentQuestion as FractionVisualQuestion).denominator}
+                  questionAl={currentQuestion.questionAl}
+                  hints={currentQuestion.hints}
+                  onAnswer={handleAnswer}
+                  showResult={showResult}
+                  isCorrect={isCorrect}
+                />
+              </div>
+            ) : /* Triangle Question */ isTriangleQuestion ? (
               <div className={`card-fun transition-all duration-300 ${
                 showResult ? (isCorrect ? 'animate-celebrate' : 'animate-shake') : ''
               }`}>
@@ -469,6 +505,19 @@ export default function QuizPage() {
 
             {/* Next button for triangle questions after result */}
             {isTriangleQuestion && showResult && (
+              <div className="flex justify-center pt-4">
+                <button
+                  onClick={handleNextQuestion}
+                  className="btn-success flex items-center justify-center gap-2"
+                >
+                  {currentIndex >= questions.length - 1 ? 'Shiko Rezultatin' : 'Vazhdo'}
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
+            )}
+
+            {/* Next button for fraction questions after result */}
+            {isFractionQuestion && showResult && (
               <div className="flex justify-center pt-4">
                 <button
                   onClick={handleNextQuestion}

@@ -53,6 +53,9 @@ const DEFAULT_STATE: GameState = {
     zbritja: { completed: 0, correct: 0, total: 20, mastery: 0, unlocked: false, bestStreak: 0 },
     shumezimi: { completed: 0, correct: 0, total: 20, mastery: 0, unlocked: false, bestStreak: 0 },
     pjestimi: { completed: 0, correct: 0, total: 20, mastery: 0, unlocked: false, bestStreak: 0 },
+    shumezimi_dyshifror: { completed: 0, correct: 0, total: 20, mastery: 0, unlocked: false, bestStreak: 0 },
+    pjestimi_dyshifror: { completed: 0, correct: 0, total: 20, mastery: 0, unlocked: false, bestStreak: 0 },
+    thyesat: { completed: 0, correct: 0, total: 20, mastery: 0, unlocked: false, bestStreak: 0 },
   },
   soundEnabled: true,
   // New defaults
@@ -160,14 +163,14 @@ export function calculateMastery(correct: number, total: number): number {
 
 // Check if a topic should be unlocked
 export function checkTopicUnlock(state: GameState, topicId: string): boolean {
-  const topicOrder = ['mbledhja', 'zbritja', 'shumezimi', 'pjestimi']
+  const topicOrder = ['mbledhja', 'zbritja', 'shumezimi', 'pjestimi', 'shumezimi_dyshifror', 'pjestimi_dyshifror', 'thyesat']
   const index = topicOrder.indexOf(topicId)
-  
+
   if (index === 0) return true // First topic always unlocked
-  
+
   const previousTopic = topicOrder[index - 1]
   const previousProgress = state.topicProgress[previousTopic]
-  
+
   return previousProgress ? previousProgress.mastery >= MASTERY_THRESHOLD : false
 }
 
@@ -311,7 +314,7 @@ export function updateAfterAnswer(
   newState = recordDailyActivity(newState, 1, correct ? 1 : 0, pointsEarned)
   
   // Check if next topic should be unlocked
-  const topicOrder = ['mbledhja', 'zbritja', 'shumezimi', 'pjestimi']
+  const topicOrder = ['mbledhja', 'zbritja', 'shumezimi', 'pjestimi', 'shumezimi_dyshifror', 'pjestimi_dyshifror', 'thyesat']
   const currentIndex = topicOrder.indexOf(topicId)
   if (currentIndex < topicOrder.length - 1 && topicProgress.mastery >= MASTERY_THRESHOLD) {
     const nextTopic = topicOrder[currentIndex + 1]
